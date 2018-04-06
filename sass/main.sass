@@ -1,0 +1,130 @@
+@import "fonts"
+@import "vars"
+
+/*GENERAL STYLES START*/
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+body
+	max-width: 1920px
+	min-width: 320px
+	margin: 0 auto
+	font-size: 16px
+	position: relative
+	line-height: 1.4
+	overflow-x: hidden
+	opacity: 1
+	background-color: #fff
+
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.nowrap
+	white-space: nowrap
+
+/*GENERAL STYLES END*/
+
+
+.page-wrapper
+	color: #fff
+	background-image: url('../img/bg/sm-bg/curve-sm-1.png')
+	
+	background-repeat: no-repeat
+	background-position: 50% 200px
+
+.header
+	padding: 20px 0 10px
+.logo-wrap
+	max-width: 105px
+	width: 100%
+	overflow: hidden
+
+.page-title
+	padding: 20px 0
+	&-text
+		font: bold 2em $bold_font
+		text-align: center
+		color: #202020
+
+.btn-wrap
+	padding: 10px 0
+	text-align: center
+.btn
+	display: inline-block
+	padding: 15px 45px
+	font-family: $main_font
+	background-color: rgb(255, 61, 76)
+	color: #fff
+	text-align: center
+	border-radius: 30px
+	transition: $trs
+	&:hover
+		background-color: darken(rgb(255, 61, 76), 15%)
+		transition: $trs
+	&:focus
+		box-shadow: none
+
+.devices-img
+	margin-top: .5em
+	width: 100vw
+	height: 58vw
+	background-repeat: no-repeat
+	background-position: 21% 0
+	background-size: 120%
+
+
+.reviewer
+	padding: 20px 0
+	color: #fff
+
+	&-logo
+		margin-top: 20px
+		display: flex
+		justify-content: center
+		text-align: center
+		&-img
+			display: block
+			max-width: 100%
+			height: auto
+
+	&-blockquote
+		margin-top: 2.5em
+		font: italic 1.25em $cursive_font
+		text-align: center
+
+	&-name
+		font-family: $bold_font
+		font-weight: bold
+		text-align: center
+		
+	&-position
+		font-family: $think_font
+		display: flex
+		justify-content: center
+		line-height: 30px
+	&-company-logo
+		display: block
+		width: 59px
+		height: 21px
+		margin-left: 6px
+
+.advantages
+	padding: 20px 0
+	&-title
+		font: bold 1.7em $bold_font
+	&-list
+		margin: 0
+		padding: 30px 0
+		list-style-type: none
+		font-family: $main_font
+		&-item
+			margin-bottom: 15px
+			padding-left: 45px
+			background: url('../img/icons/list-icon.png') no-repeat 0 0
+
+		

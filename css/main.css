@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "GothamBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/GothamBold/GothamBold.eot");
+  src: local("GothamBold"), url("../fonts/GothamBold/GothamBold.woff2") format("woff2"), url("../fonts/GothamBold/GothamBold.woff") format("woff"), url("../fonts/GothamBold/GothamBold.ttf") format("truetype"), url("../fonts/GothamBold/GothamBold.svg#GothamBold") format("svg");
+}
+@font-face {
+  font-family: "GothamBookItalic";
+  font-weight: italic;
+  font-style: normal;
+  src: url("../fonts/GothamBookItalic/GothamBookItalic.eot");
+  src: local("GothamBookItalic"), url("../fonts/GothamBookItalic/GothamBookItalic.woff2") format("woff2"), url("../fonts/GothamBookItalic/GothamBookItalic.woff") format("woff"), url("../fonts/GothamBookItalic/GothamBookItalic.ttf") format("truetype"), url("../fonts/GothamBookItalic/GothamBookItalic.svg#GothamBookItalic") format("svg");
+}
+@font-face {
+  font-family: "GothamMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/GothamMedium/GothamMedium.eot");
+  src: local("GothamMedium"), url("../fonts/GothamMedium/GothamMedium.woff2") format("woff2"), url("../fonts/GothamMedium/GothamMedium.woff") format("woff"), url("../fonts/GothamMedium/GothamMedium.ttf") format("truetype"), url("../fonts/GothamMedium/GothamMedium.svg#GothamMedium") format("svg");
+}
+@font-face {
+  font-family: "GothamLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/GothamLight/GothamLight.eot");
+  src: local("GothamLight"), url("../fonts/GothamLight/GothamLight.woff2") format("woff2"), url("../fonts/GothamLight/GothamLight.woff") format("woff"), url("../fonts/GothamLight/GothamLight.ttf") format("truetype"), url("../fonts/GothamLight/GothamLight.svg#GothamLight") format("svg");
+}
+/*GENERAL STYLES START */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 16px;
+  position: relative;
+  line-height: 1.4;
+  overflow-x: hidden;
+  opacity: 1;
+  background-color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/*GENERAL STYLES END */
+.page-wrapper {
+  color: #fff;
+  background-image: url("../img/bg/sm-bg/curve-sm-1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 200px;
+}
+
+.header {
+  padding: 20px 0 10px;
+}
+
+.logo-wrap {
+  max-width: 105px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-title {
+  padding: 20px 0;
+}
+.page-title-text {
+  font: bold 2em "GothamBold", "GothamMedium", sans-serif;
+  text-align: center;
+  color: #202020;
+}
+
+.btn-wrap {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 45px;
+  font-family: "GothamMedium", sans-serif;
+  background-color: #ff3d4c;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  background-color: #f00013;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.devices-img {
+  margin-top: 0.5em;
+  width: 100vw;
+  height: 58vw;
+  background-repeat: no-repeat;
+  background-position: 21% 0;
+  background-size: 120%;
+}
+
+.reviewer {
+  padding: 20px 0;
+  color: #fff;
+}
+.reviewer-logo {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.reviewer-logo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.reviewer-blockquote {
+  margin-top: 2.5em;
+  font: italic 1.25em "GothamBookItalic", "GothamMedium", sans-serif;
+  text-align: center;
+}
+.reviewer-name {
+  font-family: "GothamBold", "GothamMedium", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.reviewer-position {
+  font-family: "GothamLight", "GothamMedium", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 30px;
+}
+.reviewer-company-logo {
+  display: block;
+  width: 59px;
+  height: 21px;
+  margin-left: 6px;
+}
+
+.advantages {
+  padding: 20px 0;
+}
+.advantages-title {
+  font: bold 1.7em "GothamBold", "GothamMedium", sans-serif;
+}
+.advantages-list {
+  margin: 0;
+  padding: 30px 0;
+  list-style-type: none;
+  font-family: "GothamMedium", sans-serif;
+}
+.advantages-list-item {
+  margin-bottom: 15px;
+  padding-left: 45px;
+  background: url("../img/icons/list-icon.png") no-repeat 0 0;
+}

@@ -35,7 +35,7 @@ ul
 	background-image: url('../img/bg/sm-bg/curve-sm-1.png')
 	
 	background-repeat: no-repeat
-	background-position: 50% 200px
+	background-position: 66% 142px
 
 .header
 	padding: 20px 0 10px
@@ -49,7 +49,7 @@ ul
 	&-text
 		font: bold 2em $bold_font
 		text-align: center
-		color: #202020
+		color: $title_color
 
 .btn-wrap
 	padding: 10px 0
@@ -119,7 +119,7 @@ ul
 		font: bold 1.7em $bold_font
 	&-list
 		margin: 0
-		padding: 30px 0
+		padding: 45px 0 30px
 		list-style-type: none
 		font-family: $main_font
 		&-item
@@ -128,3 +128,246 @@ ul
 			background: url('../img/icons/list-icon.png') no-repeat 0 0
 
 		
+.steps
+	padding: 60px 0 20px
+	counter-reset: i
+	.form-line
+		padding: 10px 0
+	.form-text
+		padding: .8rem 0
+		font: italic 1em $cursive_font
+		color: $title_color
+		text-align: center
+		
+	input
+		padding: 1.1rem .5rem 1.1rem 2rem
+		font: 12px $think_font
+		text-transform: uppercase
+		color: #dadadb
+		letter-spacing: 1px
+
+
+.step
+	&:not(:last-child)
+		margin-bottom: 50px
+	&-title
+		position: relative
+		padding-left: 60px
+		padding-right: 21px
+		font: bold 1.7em $bold_font
+		color: $title_color
+		&::before
+			content: ''
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 44px
+			height: 44px
+			position: absolute
+			left: 0
+			top: -8px
+			background: #87c3ff
+			color: #fff
+			z-index: 0
+			border-radius: 50%
+			counter-increment: i
+			content: counter(i, decimal)
+		
+
+.tarrifs
+	position: relative
+	padding: 15px 0 40px
+	font-family: $main_font
+	&::before
+		content: ''
+		display: block
+		width: 290px
+		height: 33px
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 0
+		background: url('../img/decor-line.svg') no-repeat 50% 0
+		background-size: 100%
+		z-index: 0
+	&-item
+		margin-bottom: 37px
+		padding-top: 15px
+		border-radius: 3px
+		text-align: center
+		box-shadow: 0 7px 53.1px 5.9px rgba(0,0,0, .08)
+		background: #fff
+		position: relative
+		z-index: 1
+		transition: all .05s linear
+		&.recommend, &:hover
+			.tarrifs-price
+				font-size: 3.625em
+				line-height: 1.3
+				transition: all .05s linear
+	&-name
+		margin: 0 0 10px 0
+		font-size: .875em
+		font-weight: 700 
+		text-transform: uppercase
+		color: #e8e7e7
+		letter-spacing: 2px
+	&-img-wrap
+		overflow: hidden
+	&-img
+		display: block
+		margin: 0 auto
+		max-width: 100%
+		height: 133px
+	&-description
+		margin: 25px 0 0
+		color: $title_color
+	&-price
+		margin: 0
+		font: bold 2.5em $bold_font //40/16
+		color: $title_color
+		.symbol
+			position: relative
+			left: -5px
+			font-size: 30px
+			line-height: 52px
+			vertical-align: top
+		.period
+			font-size: 30px
+			line-height: 44px
+			vertical-align: bottom
+	&-purchase
+		margin-top: -20px
+		padding: 11px 45px
+		transform: translateY(50%)
+
+
+
+.steps
+	&-guarantee
+		margin-top: 10px
+		padding-left: 35px
+		background: url('../img/icons/guarantee.png') no-repeat 0 0
+		color: $title_color
+		font-weight: bold
+		font-family: $bold_font
+
+.step2
+	&-sign
+		font-family: $think_font
+		color: #383c43
+		text-align: center
+		
+.step
+	&-info
+		font-family: $think_font
+		color: #383c43
+		text-align: center
+
+	&-accordion
+		.card
+			border: none
+		.card-body
+			padding-bottom: 0
+		.card-header
+			position: relative
+			padding: 0
+			background-color: transparent
+			border: 1px solid rgba(0,0,0,.125)
+			&::before
+				content: ''
+				display: block
+				width: 10px
+				height: 10px
+				position: absolute
+				left: 20px
+				top: 50%
+				border-top: 2px solid $title_color
+				border-right: 2px solid $title_color
+				transform: rotate(45deg) translateY(-50%)
+				z-index: 0
+			&.opened
+				&::before
+					top: 35%
+					transform: rotate(135deg) translateY(-50%)
+		&-btn
+			width: 100%
+			padding: 20px 20px 20px 50px
+			border: none
+			outline: none
+			background-color: transparent
+			text-align: left
+			color: $title_color
+			font: bold 1em $bold_font
+
+.step3
+	label
+		position: relative
+		font: 12px $main_font
+		color: #383c43	
+		text-transform: uppercase
+	input
+		padding: 0.8rem 0.5rem 0.8rem 2rem	
+	a
+		color: #006ad7
+		&:hover
+			color: lighten(#006ad7, 5%)
+
+.my-tooltip 
+	position: absolute
+	top: -3px
+	right: -30px
+	width: 19px
+	height: 19px
+	border-radius: 50%
+	background: url('../img/icons/input-icons-set.png') no-repeat
+	background-position: -20px 0
+
+.form-divider
+	border-top: 1px solid rgba(0,0,0,.125)
+	label
+		padding: 1rem 0 .5rem
+
+.step-form-btn
+	width: 220px
+	margin-top: 5px
+	padding: 9px 45px
+	background-color: #01356b
+	text-transform: uppercase
+	font-size: 14px
+	&:hover
+		background-color: lighten(#01356b, 5%)
+
+.step3-guarantee, .step3-confirm
+	margin-top: 15px
+	font-size: 14px
+	text-align: center
+.step3-guarantee 
+	color: #333
+.step3-confirm
+	color: #969696
+
+
+
+
+
+.howTo
+	padding: 50px 0
+	text-align: center
+	background: url('../img/bg/lg-bg/cursive2.png') no-repeat
+	background-position: -400px -195px
+	&-title
+		font: bold 1.75em $bold_font
+	&-text
+		line-height: 2
+		font-family: $think_font
+	&-link
+		display: block
+		width: 130px
+		height: 45px
+		background-repeat: no-repeat
+		&-appStore
+			background-image: url('../img/app-store-white.svg')
+		&-googlePlay
+			background-image: url('../img/google-play-white.svg')
+			

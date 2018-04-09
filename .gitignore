@@ -2,6 +2,7 @@
 /dist/
 /files/
 /.git/
+/*.png
 /app/css/
 /**/_backstage
 /**/Thumbs.db

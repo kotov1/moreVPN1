@@ -36,13 +36,27 @@ ul
 
 .page-wrapper
 	color: #fff
-	background-image: url('../img/bg/sm-bg/curve-sm-1.png')
-	
+	background-image: url('../img/bg/sm-bg/curve1.png')
 	background-repeat: no-repeat
 	background-position: 66% 142px
+	background-size: auto 176vh
 
 .header
 	padding: 20px 0 10px
+	&-link
+		font-family: $main_font
+		color: $title_color
+	&-btn
+		display: block
+		width: 156px
+		height: 42px
+		background: url('../img/header-btn.png') no-repeat 50% 50%
+		border: none
+		outline: none
+		&:active
+			transform: translate(1px, 1px)
+		&:focus
+			outline: none
 .logo-wrap
 	max-width: 105px
 	width: 100%
@@ -51,6 +65,9 @@ ul
 .page-title
 	padding: 20px 0
 	&-text
+		max-width: 21rem
+		margin-left: auto
+		margin-right: auto
 		font: bold 2em $bold_font
 		text-align: center
 		color: $title_color
@@ -74,9 +91,9 @@ ul
 		box-shadow: none
 
 .devices-img
-	margin-top: .5em
 	width: 100vw
-	max-width: 552px
+	max-width: 25rem
+	margin: 1em auto 0
 	height: 58vw
 	max-height: 270px
 	background-repeat: no-repeat
@@ -193,7 +210,7 @@ ul
 		left: 50%
 		transform: translateX(-50%)
 		bottom: 0
-		background: url('../img/decor-line.svg') no-repeat 50% 0
+		background: url('../img/decor-line.png') no-repeat 50% 0
 		background-size: 100%
 		z-index: 0
 	&-item
@@ -211,6 +228,12 @@ ul
 				font-size: 3.625em
 				line-height: 1.3
 				transition: all .05s linear
+				.symbol
+					font-size: 30px
+					line-height: 58px
+				.period
+					font-size: 30px
+					line-height: 62px
 	&-name
 		margin: 0 0 10px 0
 		font-size: .875em
@@ -230,16 +253,16 @@ ul
 		color: $title_color
 	&-price
 		margin: 0
-		font: bold 2.5em $bold_font //40/16
+		font: bold 2.5em/1.3 $bold_font //40/16
 		color: $title_color
 		.symbol
 			position: relative
 			left: -5px
-			font-size: 30px
-			line-height: 52px
+			font-size: 22px
+			line-height: 42px
 			vertical-align: top
 		.period
-			font-size: 30px
+			font-size: 22px
 			line-height: 44px
 			vertical-align: bottom
 	&-purchase
@@ -279,7 +302,7 @@ ul
 		.card-header
 			position: relative
 			padding: 0
-			background-color: transparent
+			background-color: #fff
 			border: 1px solid rgba(0,0,0,.125)
 			&::before
 				content: ''
@@ -361,7 +384,7 @@ ul
 .howTo
 	padding: 4.125rem 0
 	text-align: center
-	background: url(../img/bg/lg-bg/cursive2.png) no-repeat
+	background: url(../img/bg/lg-bg/curve2.png) no-repeat
 	background-position: -194px -103px
 	background-size: 310%
 	&-title
@@ -457,7 +480,7 @@ ul
 	position: relative
 	padding-top: 550px
 	color: #fff
-	background: url('../img/bg/lg-bg/cursive3.png') no-repeat -500px 0
+	background: url('../img/bg/lg-bg/curve3.png') no-repeat -500px 0
 	overflow-x: hidden
 	&::before
 		content: ''
@@ -534,4 +557,7 @@ ul
 	&-support
 		color: #4a7ed9
 
-		
+
+
+
+@import "media"

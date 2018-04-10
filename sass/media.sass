@@ -1,0 +1,113 @@
+@import "vars"
+
+@media only screen and (min-width : 380px)
+	.devices-img
+		background-size: 100%
+	/**/
+
+@media only screen and (min-width : 480px)
+	.page-wrapper
+		background-size: auto 170vh
+
+	.step input
+		max-width: 435px
+		margin: 0 auto
+	/**/
+
+@media only screen and (min-width : 576px)
+	.page-wrapper
+		background-size: 100% 159vh
+	/**/
+
+@media only screen and (min-width : 768px)
+
+	.page-wrapper
+		background-image: url('../img/bg/md-bg/curve1.png')
+		background-repeat: no-repeat
+		background-position: 30% 242px
+		background-size: auto 144vh
+	.devices-img
+		max-width: 552px
+	.reviewer
+		padding: 20px 95px
+
+
+
+	.tarrifs
+		display: flex
+		justify-content: center
+		&-item
+			width: 240px
+			position: relative
+			&.recommend, &:hover
+				width: 280px
+				transform: scale(1.1)
+				z-index: 10
+				.tarrifs-purchase
+					display: inline-block
+					
+		&-purchase
+			display: none
+
+	.step1
+		.step-title
+			margin-bottom: 2rem
+
+	.tarrifs::before
+		width: 500px
+
+	.step-accordion .collapse
+		padding-top: 20px
+		padding-bottom: 30px
+	.step-form-btn
+		margin-top: 30px
+	.step3-guarantee, .step3-confirm
+		text-align: left
+		
+	.step-accordion-btn
+		padding-bottom: 15px
+		img
+			margin-left: 20px
+
+	.steps
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			bottom: -475px
+			background: url('../img/bg/lg-bg/curve2.png') no-repeat 50% 100%
+			background-size: 100%
+			z-index: 0
+
+	.howTo
+		background-image: none
+	.howTo-link-appStore
+		margin-right: 0
+		margin-left: auto
+		
+	.howTo-link-googlePlay
+		margin-left: 0
+
+
+	.endorsment-post
+		max-width: 535px
+		margin-left: auto
+		margin-right: auto
+		
+	.endorsment-text
+		padding: 0 10vw
+		
+
+	/**/
+
+@media only screen and (min-width : 992px)
+	
+	/**/
+
+@media only screen and (min-width : 1200px)
+	
+	/**/

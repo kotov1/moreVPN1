@@ -66,13 +66,33 @@ ul {
 /*GENERAL STYLES END */
 .page-wrapper {
   color: #fff;
-  background-image: url("../img/bg/sm-bg/curve-sm-1.png");
+  background-image: url("../img/bg/sm-bg/curve1.png");
   background-repeat: no-repeat;
   background-position: 66% 142px;
+  background-size: auto 176vh;
 }
 
 .header {
   padding: 20px 0 10px;
+}
+.header-link {
+  font-family: "GothamMedium", sans-serif;
+  color: #202020;
+}
+.header-btn {
+  display: block;
+  width: 156px;
+  height: 42px;
+  background: url("../img/header-btn.png") no-repeat 50% 50%;
+  border: none;
+  outline: none;
+}
+.header-btn:active {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+}
+.header-btn:focus {
+  outline: none;
 }
 
 .logo-wrap {
@@ -85,6 +105,9 @@ ul {
   padding: 20px 0;
 }
 .page-title-text {
+  max-width: 21rem;
+  margin-left: auto;
+  margin-right: auto;
   font: bold 2em "GothamBold", "GothamMedium", sans-serif;
   text-align: center;
   color: #202020;
@@ -117,9 +140,9 @@ ul {
 }
 
 .devices-img {
-  margin-top: 0.5em;
   width: 100vw;
-  max-width: 552px;
+  max-width: 25rem;
+  margin: 1em auto 0;
   height: 58vw;
   max-height: 270px;
   background-repeat: no-repeat;
@@ -261,7 +284,7 @@ ul {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 0;
-  background: url("../img/decor-line.svg") no-repeat 50% 0;
+  background: url("../img/decor-line.png") no-repeat 50% 0;
   background-size: 100%;
   z-index: 0;
 }
@@ -283,6 +306,14 @@ ul {
   line-height: 1.3;
   -webkit-transition: all 0.05s linear;
   transition: all 0.05s linear;
+}
+.tarrifs-item.recommend .tarrifs-price .symbol, .tarrifs-item:hover .tarrifs-price .symbol {
+  font-size: 30px;
+  line-height: 58px;
+}
+.tarrifs-item.recommend .tarrifs-price .period, .tarrifs-item:hover .tarrifs-price .period {
+  font-size: 30px;
+  line-height: 62px;
 }
 .tarrifs-name {
   margin: 0 0 10px 0;
@@ -307,18 +338,18 @@ ul {
 }
 .tarrifs-price {
   margin: 0;
-  font: bold 2.5em "GothamBold", "GothamMedium", sans-serif;
+  font: bold 2.5em/1.3 "GothamBold", "GothamMedium", sans-serif;
   color: #202020;
 }
 .tarrifs-price .symbol {
   position: relative;
   left: -5px;
-  font-size: 30px;
-  line-height: 52px;
+  font-size: 22px;
+  line-height: 42px;
   vertical-align: top;
 }
 .tarrifs-price .period {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 44px;
   vertical-align: bottom;
 }
@@ -359,7 +390,7 @@ ul {
 .step-accordion .card-header {
   position: relative;
   padding: 0;
-  background-color: transparent;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .step-accordion .card-header::before {
@@ -455,7 +486,7 @@ ul {
 .howTo {
   padding: 4.125rem 0;
   text-align: center;
-  background: url(../img/bg/lg-bg/cursive2.png) no-repeat;
+  background: url(../img/bg/lg-bg/curve2.png) no-repeat;
   background-position: -194px -103px;
   background-size: 310%;
 }
@@ -559,7 +590,7 @@ ul {
   position: relative;
   padding-top: 550px;
   color: #fff;
-  background: url("../img/bg/lg-bg/cursive3.png") no-repeat -500px 0;
+  background: url("../img/bg/lg-bg/curve3.png") no-repeat -500px 0;
   overflow-x: hidden;
 }
 .canTry::before {
@@ -647,4 +678,147 @@ ul {
 }
 .footer-support {
   color: #4a7ed9;
+}
+
+@media only screen and (min-width: 380px) {
+  .devices-img {
+    background-size: 100%;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 480px) {
+  .page-wrapper {
+    background-size: auto 170vh;
+  }
+
+  .step input {
+    max-width: 435px;
+    margin: 0 auto;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 576px) {
+  .page-wrapper {
+    background-size: 100% 159vh;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 768px) {
+  .page-wrapper {
+    background-image: url("../img/bg/md-bg/curve1.png");
+    background-repeat: no-repeat;
+    background-position: 30% 242px;
+    background-size: auto 144vh;
+  }
+
+  .devices-img {
+    max-width: 552px;
+  }
+
+  .reviewer {
+    padding: 20px 95px;
+  }
+
+  .tarrifs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tarrifs-item {
+    width: 240px;
+    position: relative;
+  }
+  .tarrifs-item.recommend, .tarrifs-item:hover {
+    width: 280px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    z-index: 10;
+  }
+  .tarrifs-item.recommend .tarrifs-purchase, .tarrifs-item:hover .tarrifs-purchase {
+    display: inline-block;
+  }
+  .tarrifs-purchase {
+    display: none;
+  }
+
+  .step1 .step-title {
+    margin-bottom: 2rem;
+  }
+
+  .tarrifs::before {
+    width: 500px;
+  }
+
+  .step-accordion .collapse {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .step-form-btn {
+    margin-top: 30px;
+  }
+
+  .step3-guarantee, .step3-confirm {
+    text-align: left;
+  }
+
+  .step-accordion-btn {
+    padding-bottom: 15px;
+  }
+  .step-accordion-btn img {
+    margin-left: 20px;
+  }
+
+  .steps {
+    position: relative;
+  }
+  .steps::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -475px;
+    background: url("../img/bg/lg-bg/curve2.png") no-repeat 50% 100%;
+    background-size: 100%;
+    z-index: 0;
+  }
+
+  .howTo {
+    background-image: none;
+  }
+
+  .howTo-link-appStore {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .howTo-link-googlePlay {
+    margin-left: 0;
+  }
+
+  .endorsment-post {
+    max-width: 535px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .endorsment-text {
+    padding: 0 10vw;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 992px) {
+  /* */
+}
+@media only screen and (min-width: 1200px) {
+  /* */
 }

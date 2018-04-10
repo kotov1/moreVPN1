@@ -30,11 +30,17 @@
 
 			<header class="header">
 				<div class="container">
-					<div class="row">
-						<div class="col-12">
+					<div class="row align-items-center">
+						<div class="col-12 col-md">
 							<div class="logo-wrap">
 								<img src="img/logo.svg" alt="Logo">
 							</div>
+						</div>
+						<div class="d-none d-md-block col-md-auto">
+							<a class="header-link" href="#">Features</a>
+						</div>
+						<div class="d-none d-md-block col-md-auto">
+							<button class="header-btn"></button>
 						</div>
 					</div>
 				</div>
@@ -58,28 +64,28 @@
 
 			<section class="reviewer">
 				<div class="container">
-					<div class="row">
-						<div class="col-6">
+					<div class="row justify-content-md-center">
+						<div class="col-6 col-md-4">
 							<div class="reviewer-logo">
 								<img src="img/companies-logos/forbes.png" alt="forbes" class="reviewer-logo-img">
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-6 col-md-4">
 							<div class="reviewer-logo">
 								<img src="img/companies-logos/lifehacker.png" alt="lifehacker" class="reviewer-logo-img">
 							</div>
 						</div>
-						<div class="col-12">
+						<div class="col-12 col-md-4">
 							<div class="reviewer-logo">
 								<img src="img/companies-logos/nyt.png" alt="the new york times" class="reviewer-logo-img">
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-6 col-md-4">
 							<div class="reviewer-logo">
 								<img src="img/companies-logos/verge.png" alt="verge" class="reviewer-logo-img">
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-6 col-md-4">
 							<div class="reviewer-logo">
 								<img src="img/companies-logos/gizmodo.png" alt="gizmodo" class="reviewer-logo-img">
 							</div>
@@ -130,7 +136,7 @@
 							<div class="col-12">
 								<div class="tarrifs">	
 
-										<div class="tarrifs-item recommend">
+										<div class="tarrifs-item recommend order-md-2">
 											<div class="tarrifs-name">super heavy</div>
 											<div class="tarrifs-img-wrap"><img src="img/superheavy.svg" alt="superheavy" class="tarrifs-img"></div>
 											<p class="tarrifs-description">1 - year plan</p>
@@ -138,7 +144,7 @@
 											<button class="btn tarrifs-purchase">Get 1 Year Plan</button>
 										</div>
 
-									<div class="tarrifs-item">
+									<div class="tarrifs-item order-md-3">
 											<div class="tarrifs-name">heavy</div>
 											<div class="tarrifs-img-wrap"><img src="img/heavy.svg" alt="heavy" class="tarrifs-img"></div>
 											<p class="tarrifs-description">6 - month plan</p>
@@ -146,7 +152,7 @@
 											<button class="btn tarrifs-purchase">Get 6 months Plan</button>
 										</div>
 
-										<div class="tarrifs-item">
+										<div class="tarrifs-item order-md-1">
 											<div class="tarrifs-name">medium</div>
 											<div class="tarrifs-img-wrap"><img src="img/medium.svg" alt="medium" class="tarrifs-img"></div>
 											<p class="tarrifs-description">1 - months plan</p>
@@ -201,6 +207,13 @@
 												<div class="card-header" id="headingOne">
 													<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 															Credit Card
+															<img src="img/steps-payment-logos/visa.png" alt="visa">
+															<img src="img/steps-payment-logos/mastercard.png" alt="mastercard">
+															<img src="img/steps-payment-logos/americanexpress.png" alt="americanexpress">
+															<img src="img/steps-payment-logos/jch.png" alt="jch">
+															<img src="img/steps-payment-logos/maestro.png" alt="maestro">
+															<img src="img/steps-payment-logos/visae.png" alt="visa electron">
+															<img src="img/steps-payment-logos/dc.png" alt="diners club">
 													</button>
 												</div>
 							
@@ -231,13 +244,14 @@
 																		<label for="inputPostalCode">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
 																		<input type="text" class="form-control" id="inputPostalCode" placeholder="000" required>
 																</div>
+																<div class="col-12"><div class="form-divider"></div></div>
 															</div>
-															<div class="form-row form-divider">
+															<div class="form-row mt-md-2">
 																<div class="form-group col-12 col-md-6">
 																		<label for="inputCoupon"><a href="#">Got coupon?</a></label>
 																		<input type="text" class="form-control" id="inputCoupon" placeholder="0000 0000 0000 0000" required>
 																</div>
-																<div class="col-12 col-md-6 d-flex justify-content-center">
+																<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
 																	<button type="submit" class="btn step-form-btn">Join now</button>
 																</div>
 															</div>
@@ -251,6 +265,7 @@
 												<div class="card-header" id="headingTwo">
 													<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
 															Bitcoin
+															<img src="img/steps-payment-logos/btc.png" alt="bitcoin">
 													</button>
 												</div>
 							
@@ -281,13 +296,14 @@
 																		<label for="inputPostalCode2">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
 																		<input type="text" class="form-control" id="inputPostalCode2" placeholder="000" required>
 																</div>
+																<div class="col-12"><div class="form-divider"></div></div>
 															</div>
-															<div class="form-row form-divider">
+															<div class="form-row mt-md-2">
 																<div class="form-group col-12 col-md-6">
 																		<label for="inputCoupon2"><a href="#">Got coupon?</a></label>
 																		<input type="text" class="form-control" id="inputCoupon2" placeholder="0000 0000 0000 0000" required>
 																</div>
-																<div class="col-12 col-md-6 d-flex justify-content-center">
+																<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
 																	<button type="submit" class="btn step-form-btn">Join now</button>
 																</div>
 															</div>
@@ -301,6 +317,10 @@
 												<div class="card-header" id="headingThree">
 													<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
 															Other
+															<img src="img/steps-payment-logos/wp.png" alt="worldpay">
+															<img src="img/steps-payment-logos/sage.png" alt="sage">
+															<img src="img/steps-payment-logos/skrill.png" alt="skrill">
+															<img src="img/steps-payment-logos/cirrus.png" alt="cirrus">
 													</button>
 												</div>
 							
@@ -331,13 +351,14 @@
 																		<label for="inputPostalCode3">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
 																		<input type="text" class="form-control" id="inputPostalCode3" placeholder="000" required>
 																</div>
+																<div class="col-12"><div class="form-divider"></div></div>
 															</div>
-															<div class="form-row form-divider">
+															<div class="form-row mt-md-2r">
 																<div class="form-group col-12 col-md-6">
 																		<label for="inputCoupon3"><a href="#">Got coupon?</a></label>
 																		<input type="text" class="form-control" id="inputCoupon3" placeholder="0000 0000 0000 0000" required>
 																</div>
-																<div class="col-12 col-md-6 d-flex justify-content-center">
+																<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
 																	<button type="submit" class="btn step-form-btn">Join now</button>
 																</div>
 															</div>
@@ -363,7 +384,7 @@
 							<h2 class="howTo-title">How to download the app?</h2>
 						</div>
 						<div class="col-12">
-							<p class="howTo-text">Just download the appfrom store. Simple, nice and user-friendly application of vpn.</p>
+							<p class="howTo-text">Just download the appfrom store.<br> Simple, nice and user-friendly application of vpn.</p>
 						</div>
 						<div class="col-6"><a href="#" class="howTo-link howTo-link-appStore"></a></div>
 						<div class="col-6"><a href="#" class="howTo-link howTo-link-googlePlay"></a></div>
@@ -379,32 +400,32 @@
 						<div class="col-12">
 							<div class="description-title">Why Do You Need NOVAVPN?</div>
 						</div>
-						<div class="col-12 mt-5">
+						<div class="col-12 col-md-6 mt-5">
 							<div class="description-img"><img src="img/descr-img/highspeed.svg" alt="Highspeed VPN"></div>
 							<div class="description-subtitle">Highspeed VPN</div>
 							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
 						</div>
-						<div class="col-12 mt-5">
+						<div class="col-12 col-md-6 mt-5">
 							<div class="description-img"><img src="img/descr-img/nologging.svg" alt="No Logging"></div>
 							<div class="description-subtitle">No Logging</div>
 							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
 						</div>
-						<div class="col-12 mt-5">
+						<div class="col-12 col-md-6 mt-5">
 							<div class="description-img"><img src="img/descr-img/unlimited.svg" alt="Unlimited Server Changes"></div>
 							<div class="description-subtitle">Unlimited Server Changes</div>
 							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 						</div>
-						<div class="col-12 mt-5">
+						<div class="col-12 col-md-6 mt-5">
 							<div class="description-img"><img src="img/descr-img/multiple.svg" alt="Multiple Loggins"></div>
 							<div class="description-subtitle">Multiple Loggins</div>
 							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</div>
 						</div>
-						<div class="col-12 mt-5">
+						<div class="col-12 col-md-6 mt-5">
 							<div class="description-img"><img src="img/descr-img/protection.svg" alt="DNS leak protection"></div>
 							<div class="description-subtitle">DNS leak protection</div>
 							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
 						</div>
-						<div class="col-12 mt-5">
+						<div class="col-12 col-md-6 mt-5">
 							<div class="description-img"><img src="img/descr-img/aes.svg" alt="AES-256"></div>
 							<div class="description-subtitle">AES-256</div>
 							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -529,10 +550,10 @@
 								<div class="row">
 									<div class="col-12">
 										<div class="footer-payment-logos d-flex justify-content-between align-items-center">
-											<img src="img/payment-logos/visa.png" alt="visa">
-											<img src="img/payment-logos/mastercard.png" alt="mastercard">
-											<img src="img/payment-logos/maestro.png" alt="maestro">
-											<img src="img/payment-logos/paypal.png" alt="paypal">
+											<img src="img/footer-payment-logos/visa.png" alt="visa">
+											<img src="img/footer-payment-logos/mastercard.png" alt="mastercard">
+											<img src="img/footer-payment-logos/maestro.png" alt="maestro">
+											<img src="img/footer-payment-logos/paypal.png" alt="paypal">
 										</div>
 									</div>
 									<div class="col-12 text-center">

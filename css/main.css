@@ -58,6 +58,11 @@ ul {
   white-space: nowrap;
 }
 
+.mytitle, .howTo-title, .description-title, .endorsment-title {
+  font: bold 1.75em "GothamBold", "GothamMedium", sans-serif;
+  text-align: center;
+}
+
 /*GENERAL STYLES END */
 .page-wrapper {
   color: #fff;
@@ -114,7 +119,9 @@ ul {
 .devices-img {
   margin-top: 0.5em;
   width: 100vw;
+  max-width: 552px;
   height: 58vw;
+  max-height: 270px;
   background-repeat: no-repeat;
   background-position: 21% 0;
   background-size: 120%;
@@ -338,6 +345,7 @@ ul {
 }
 
 .step-info {
+  margin: 0.5rem 0 0.85rem;
   font-family: "GothamLight", "GothamMedium", sans-serif;
   color: #383c43;
   text-align: center;
@@ -445,13 +453,11 @@ ul {
 }
 
 .howTo {
-  padding: 50px 0;
+  padding: 4.125rem 0;
   text-align: center;
-  background: url("../img/bg/lg-bg/cursive2.png") no-repeat;
-  background-position: -400px -195px;
-}
-.howTo-title {
-  font: bold 1.75em "GothamBold", "GothamMedium", sans-serif;
+  background: url(../img/bg/lg-bg/cursive2.png) no-repeat;
+  background-position: -194px -103px;
+  background-size: 310%;
 }
 .howTo-text {
   line-height: 2;
@@ -465,7 +471,180 @@ ul {
 }
 .howTo-link-appStore {
   background-image: url("../img/app-store-white.svg");
+  margin-right: auto;
 }
 .howTo-link-googlePlay {
   background-image: url("../img/google-play-white.svg");
+  margin-left: auto;
+}
+
+.description {
+  padding: 3.125rem 0;
+}
+.description-title {
+  color: #202020;
+}
+.description-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100px;
+}
+.description-subtitle {
+  margin-top: 1rem;
+  text-align: center;
+  font: 1.125em "GothamMedium", sans-serif;
+  color: #202020;
+}
+.description-text {
+  margin-top: 1rem;
+  font: 0.875em/1.5 "GothamLight", "GothamMedium", sans-serif;
+  color: #a1a1a1;
+}
+
+.endorsment {
+  color: #202020;
+}
+.endorsment-title {
+  margin-bottom: 4.5rem;
+}
+.endorsment-post {
+  margin-bottom: 3.6rem;
+  padding: 4.25rem 1.5rem 1rem;
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 7px 53.1px 5.9px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 7px 53.1px 5.9px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.endorsment-img-wrap {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -38%);
+          transform: translate(-50%, -38%);
+  border-radius: 50%;
+  background-color: #949ba3;
+  overflow: hidden;
+}
+.endorsment-img {
+  position: relative;
+}
+.endorsment-name {
+  margin-top: 1rem;
+  font: 1.125em "GothamMedium", sans-serif;
+}
+.endorsment-text {
+  margin-top: 1rem;
+  font: 0.875em/1.8 "GothamLight", "GothamMedium", sans-serif;
+}
+.endorsment-logo {
+  margin-top: 3.2rem;
+  text-align: left;
+}
+
+.endorsment1-img, .endorsment2-img {
+  left: -66px;
+}
+
+.endorsment3-img {
+  top: -18px;
+  left: -80px;
+}
+
+.canTry {
+  position: relative;
+  padding-top: 550px;
+  color: #fff;
+  background: url("../img/bg/lg-bg/cursive3.png") no-repeat -500px 0;
+  overflow-x: hidden;
+}
+.canTry::before {
+  content: "";
+  display: block;
+  width: 288px;
+  height: 534px;
+  position: absolute;
+  right: -34px;
+  top: 0;
+  background: url("../img/devices2.png") no-repeat 0 0;
+  z-index: 0;
+}
+.canTry-title {
+  padding-right: 0.4rem;
+  font: bold 2em "GothamBold", "GothamMedium", sans-serif;
+}
+.canTry-text {
+  margin-top: 1.4rem;
+  font: 0.875em/1.8 "GothamLight", "GothamMedium", sans-serif;
+}
+.canTry-btn {
+  margin-top: 2rem;
+  padding: 12px 65px;
+}
+
+.get {
+  padding: 3rem 0 2rem;
+  background-color: #021982;
+}
+.get-title {
+  padding: 0 20vw;
+  font: 1.375em "GothamMedium", sans-serif;
+  text-align: center;
+}
+.get-subtitle {
+  margin-top: 1rem;
+  padding: 0 12vw;
+  font-family: "GothamLight", "GothamMedium", sans-serif;
+  text-align: center;
+}
+.get-links {
+  margin-top: 1rem;
+}
+.get-link {
+  display: block;
+  width: 139px;
+  height: 43px;
+  background-repeat: no-repeat;
+}
+.get-link-appStore {
+  background-image: url("../img/app-store-black.png");
+  margin-right: auto;
+}
+.get-link-googlePlay {
+  background-image: url("../img/google-play-black.png");
+  margin-left: auto;
+}
+
+.footer {
+  padding: 0 0 2rem;
+  background-color: #021982;
+  font-family: "GothamLight", "GothamMedium", sans-serif;
+}
+.footer-list-title {
+  padding: 0.55rem 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-list a {
+  display: block;
+  padding: 0.1rem 0;
+  color: inherit;
+}
+.footer-payment-logos {
+  margin: 1.5rem 0;
+}
+.footer-copy, .footer-support {
+  font-size: 0.75em;
+}
+.footer-support {
+  color: #4a7ed9;
 }

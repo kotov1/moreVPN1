@@ -27,6 +27,10 @@ ul
 .nowrap
 	white-space: nowrap
 
+.mytitle
+	font: bold 1.75em $bold_font
+	text-align: center
+
 /*GENERAL STYLES END*/
 
 
@@ -72,7 +76,9 @@ ul
 .devices-img
 	margin-top: .5em
 	width: 100vw
+	max-width: 552px
 	height: 58vw
+	max-height: 270px
 	background-repeat: no-repeat
 	background-position: 21% 0
 	background-size: 120%
@@ -260,6 +266,7 @@ ul
 		
 .step
 	&-info
+		margin: .5rem 0 .85rem
 		font-family: $think_font
 		color: #383c43
 		text-align: center
@@ -352,12 +359,13 @@ ul
 
 
 .howTo
-	padding: 50px 0
+	padding: 4.125rem 0
 	text-align: center
-	background: url('../img/bg/lg-bg/cursive2.png') no-repeat
-	background-position: -400px -195px
+	background: url(../img/bg/lg-bg/cursive2.png) no-repeat
+	background-position: -194px -103px
+	background-size: 310%
 	&-title
-		font: bold 1.75em $bold_font
+		@extend .mytitle
 	&-text
 		line-height: 2
 		font-family: $think_font
@@ -368,6 +376,162 @@ ul
 		background-repeat: no-repeat
 		&-appStore
 			background-image: url('../img/app-store-white.svg')
+			margin-right: auto
 		&-googlePlay
 			background-image: url('../img/google-play-white.svg')
+			margin-left: auto
 			
+
+
+
+.description
+	padding: 3.125rem 0
+	&-title
+		color: $title_color
+		@extend .mytitle
+	&-img
+		img
+			display: block
+			margin: 0 auto
+			max-width: 100%
+			height: 100px
+	&-subtitle
+		margin-top: 1rem
+		text-align: center
+		font: 1.125em $main_font
+		color: $title_color
+	&-text
+		margin-top: 1rem
+		font: .875em/1.5 $think_font
+		color: darken(#c7c7c7, 15%)
+
+
+
+
+.endorsment
+	color: $title_color
+	&-title
+		margin-bottom: 4.5rem
+		@extend .mytitle
+	&-post
+		margin-bottom: 3.6rem
+		padding: 4.25rem 1.5rem 1rem
+		position: relative
+		background-color: #fff
+		border-radius: 4px
+		box-shadow: 0px 7px 53.1px 5.9px rgba(0, 0, 0, 0.08)
+		text-align: center
+	&-img-wrap
+		width: 110px
+		height: 110px
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-50%, -38%)
+		border-radius: 50%
+		background-color: rgb(148, 155, 163)
+		overflow: hidden
+	&-img
+		position: relative
+	&-name
+		margin-top: 1rem
+		font: 1.125em $main_font
+	&-text
+		margin-top: 1rem
+		font: .875em/1.8 $think_font
+	&-logo
+		margin-top: 3.2rem
+		text-align: left
+		
+		
+.endorsment1-img, .endorsment2-img
+	left: -66px
+.endorsment3-img
+	top: -18px
+	left: -80px
+
+		
+
+
+.canTry
+	position: relative
+	padding-top: 550px
+	color: #fff
+	background: url('../img/bg/lg-bg/cursive3.png') no-repeat -500px 0
+	overflow-x: hidden
+	&::before
+		content: ''
+		display: block
+		width: 288px
+		height: 534px
+		position: absolute
+		right: -34px
+		top: 0
+		background: url('../img/devices2.png') no-repeat 0 0
+		z-index: 0
+	&-title
+		padding-right: .4rem
+		font: bold 2em $bold_font
+	&-text
+		margin-top: 1.4rem
+		font: .875em/1.8 $think_font
+	&-btn
+		margin-top: 2rem
+		padding: 12px 65px
+
+
+
+
+
+.get
+	padding: 3rem 0 2rem
+	background-color: #021982
+	&-title
+		padding: 0 20vw
+		font: 1.375em $main_font
+		text-align: center
+	&-subtitle
+		margin-top: 1rem
+		padding: 0 12vw
+		font-family: $think_font
+		text-align: center
+	&-links
+		margin-top: 1rem
+	&-link
+		display: block
+		width: 139px
+		height: 43px
+		background-repeat: no-repeat
+		&-appStore
+			background-image: url('../img/app-store-black.png')
+			margin-right: auto
+		&-googlePlay
+			background-image: url('../img/google-play-black.png')
+			margin-left: auto
+			
+
+
+.footer
+	padding: 0 0 2rem
+	background-color: #021982
+	font-family: $think_font
+	&-list-title
+		padding: .55rem 0
+		text-decoration: underline
+		text-transform: uppercase
+	&-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		a
+			display: block
+			padding: .1rem 0
+			color: inherit
+	&-payment-logos
+		margin: 1.5rem 0
+	&-copy, &-support
+		font-size: .75em
+	&-support
+		color: #4a7ed9
+
+		

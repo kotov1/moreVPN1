@@ -28,7 +28,7 @@ ul
 	white-space: nowrap
 
 .mytitle
-	font: bold 1.75em $bold_font
+	font: 1.75em $bold_font
 	text-align: center
 
 /*GENERAL STYLES END*/
@@ -53,6 +53,8 @@ ul
 		background: url('../img/header-btn.png') no-repeat 50% 50%
 		border: none
 		outline: none
+		cursor: pointer
+		
 		&:active
 			transform: translate(1px, 1px)
 		&:focus
@@ -68,7 +70,7 @@ ul
 		max-width: 21rem
 		margin-left: auto
 		margin-right: auto
-		font: bold 2em $bold_font
+		font: 2em $bold_font
 		text-align: center
 		color: $title_color
 
@@ -117,12 +119,11 @@ ul
 
 	&-blockquote
 		margin-top: 2.5em
-		font: italic 1.25em $cursive_font
+		font: 1.25em $cursive_font
 		text-align: center
 
 	&-name
 		font-family: $bold_font
-		font-weight: bold
 		text-align: center
 		
 	&-position
@@ -139,7 +140,7 @@ ul
 .advantages
 	padding: 20px 0
 	&-title
-		font: bold 1.7em $bold_font
+		font: 1.7em $bold_font
 	&-list
 		margin: 0
 		padding: 45px 0 30px
@@ -177,7 +178,7 @@ ul
 		position: relative
 		padding-left: 60px
 		padding-right: 21px
-		font: bold 1.7em $bold_font
+		font: 1.7em $bold_font
 		color: $title_color
 		&::before
 			content: ''
@@ -222,12 +223,12 @@ ul
 		background: #fff
 		position: relative
 		z-index: 1
-		transition: all .05s linear
+		transition: all .2s
 		&.recommend, &:hover
 			.tarrifs-price
 				font-size: 3.625em
 				line-height: 1.3
-				transition: all .05s linear
+				transition: all .2s
 				.symbol
 					font-size: 30px
 					line-height: 58px
@@ -253,7 +254,7 @@ ul
 		color: $title_color
 	&-price
 		margin: 0
-		font: bold 2.5em/1.3 $bold_font //40/16
+		font: 2.5em/1.3 $bold_font //40/16
 		color: $title_color
 		.symbol
 			position: relative
@@ -278,7 +279,6 @@ ul
 		padding-left: 35px
 		background: url('../img/icons/guarantee.png') no-repeat 0 0
 		color: $title_color
-		font-weight: bold
 		font-family: $bold_font
 
 .step2
@@ -328,7 +328,12 @@ ul
 			background-color: transparent
 			text-align: left
 			color: $title_color
-			font: bold 1em $bold_font
+			font: 1em $bold_font
+			cursor: pointer
+			
+			img
+				display: none
+				
 
 .step3
 	label
@@ -377,7 +382,8 @@ ul
 .step3-confirm
 	color: #969696
 
-
+.collapse-form
+	padding: 10px 0
 
 
 
@@ -385,8 +391,8 @@ ul
 	padding: 4.125rem 0
 	text-align: center
 	background: url(../img/bg/lg-bg/curve2.png) no-repeat
-	background-position: -194px -103px
-	background-size: 310%
+	background-position: -68vw -30vw
+	background-size: 293vw
 	&-title
 		@extend .mytitle
 	&-text
@@ -399,10 +405,12 @@ ul
 		background-repeat: no-repeat
 		&-appStore
 			background-image: url('../img/app-store-white.svg')
-			margin-right: auto
+			margin-left: auto
+			margin-right: 10px
 		&-googlePlay
 			background-image: url('../img/google-play-white.svg')
-			margin-left: auto
+			margin-right: auto
+			margin-left: 10px
 			
 
 
@@ -424,7 +432,8 @@ ul
 		font: 1.125em $main_font
 		color: $title_color
 	&-text
-		margin-top: 1rem
+		max-width: 290px
+		margin: 1rem auto 0
 		font: .875em/1.5 $think_font
 		color: darken(#c7c7c7, 15%)
 
@@ -437,6 +446,8 @@ ul
 		margin-bottom: 4.5rem
 		@extend .mytitle
 	&-post
+		display: flex
+		flex-direction: column
 		margin-bottom: 3.6rem
 		padding: 4.25rem 1.5rem 1rem
 		position: relative
@@ -463,7 +474,7 @@ ul
 		margin-top: 1rem
 		font: .875em/1.8 $think_font
 	&-logo
-		margin-top: 3.2rem
+		margin-top: auto
 		text-align: left
 		
 		
@@ -494,7 +505,7 @@ ul
 		z-index: 0
 	&-title
 		padding-right: .4rem
-		font: bold 2em $bold_font
+		font: 2em $bold_font
 	&-text
 		margin-top: 1.4rem
 		font: .875em/1.8 $think_font
@@ -527,10 +538,12 @@ ul
 		background-repeat: no-repeat
 		&-appStore
 			background-image: url('../img/app-store-black.png')
-			margin-right: auto
+			margin-left: auto
+			margin-right: 10px
 		&-googlePlay
 			background-image: url('../img/google-play-black.png')
-			margin-left: auto
+			margin-right: auto
+			margin-left: 10px
 			
 
 

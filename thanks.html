@@ -23,7 +23,7 @@
 
 		<script type="text/javascript">
 			function redirect() {
-				setTimeout(location.replace("index.html"),1000);
+				setTimeout('location.replace("index.html")', 3000);
 			}
 		</script>
 		<noscript>
@@ -34,22 +34,38 @@
 	<body>
 
 
-		<div class="page-wrapper">
+		<div class="page-wrapper thanks-page">
 
 
 			<header class="header">
 				<div class="container">
-					<div class="row">
-						<div class="col-12">
+					<div class="row align-items-center">
+						<div class="col-12 col-md">
 							<div class="logo-wrap">
 								<img src="img/logo.svg" alt="Logo">
 							</div>
 						</div>
+						<div class="d-none d-md-block col-md-auto">
+							<a class="header-link" href="#">Features</a>
+						</div>
+						<div class="d-none d-md-block col-md-auto">
+							<button class="header-btn"></button>
+						</div>
 					</div>
 				</div>
 			</header>
-			
 
+
+			<section class="thanks">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1 class="thanks-title">Thank you for payment!</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			
 
 
 
@@ -76,18 +92,18 @@
 			<footer class="footer" id="footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-12">
+						<div class="col-12 col-xl-8">
 							<div class="footer-links">
 								<div class="row">
-									<div class="col-12">
-										<div class="footer-list-title" data-toggle="collapse" data-target="#footer-list1" aria-expanded="false" aria-controls="footer-list1">learn more</div>
+									<div class="col-12 col-md-3">
+										<div class="footer-list-title" data-toggle="" data-target="#footer-list1" aria-expanded="false" aria-controls="footer-list1">learn more</div>
 										<ul class="footer-list collapse" id="footer-list1" data-parent="#footer">
 											<li><a href="#">What is VPN?</a></li>
 											<li><a href="#">VPN Sercice</a></li>
 											<li><a href="#">VPN Softvare</a></li>
 										</ul>
 									</div>
-									<div class="col-12">
+									<div class="col-12 col-md-3">
 										<div class="footer-list-title" data-toggle="collapse" data-target="#footer-list2" aria-expanded="false" aria-controls="footer-list2" aria-expanded="false">about</div>
 										<ul class="footer-list collapse" id="footer-list2" data-parent="#footer"">
 											<li><a href="#">Support</a></li>
@@ -95,7 +111,7 @@
 											<li><a href="#">Referances</a></li>
 										</ul>
 									</div>
-									<div class="col-12">
+									<div class="col-12 col-md-3">
 										<div class="footer-list-title" data-toggle="collapse" data-target="#footer-list3" aria-expanded="false" aria-controls="footer-list3" aria-expanded="false">service</div>
 										<ul class="footer-list collapse" id="footer-list3" data-parent="#footer"">
 											<li><a href="#">Software</a></li>
@@ -103,7 +119,7 @@
 											<li><a href="#">Affilates</a></li>
 										</ul>
 									</div>
-									<div class="col-12">
+									<div class="col-12 col-md-3">
 										<div class="footer-list-title" data-toggle="collapse" data-target="#footer-list4" aria-expanded="false" aria-controls="footer-list4" aria-expanded="false">social</div>
 										<ul class="footer-list collapse" id="footer-list4" data-parent="#footer"">
 											<li><a href="#">Facebook</a></li>
@@ -114,18 +130,18 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12">
+						<div class="col-12 col-xl-4">
 							<div class="footer-info">
-								<div class="row">
-									<div class="col-12">
+								<div class="row align-items-md-center">
+									<div class="col-12 col-md-5 col-xl-12 order-md-2 order-xl-1">
 										<div class="footer-payment-logos d-flex justify-content-between align-items-center">
-											<img src="img/payment-logos/visa.png" alt="visa">
-											<img src="img/payment-logos/mastercard.png" alt="mastercard">
-											<img src="img/payment-logos/maestro.png" alt="maestro">
-											<img src="img/payment-logos/paypal.png" alt="paypal">
+											<img src="img/footer-payment-logos/visa.png" alt="visa">
+											<img src="img/footer-payment-logos/mastercard.png" alt="mastercard">
+											<img src="img/footer-payment-logos/maestro.png" alt="maestro">
+											<img src="img/footer-payment-logos/paypal.png" alt="paypal">
 										</div>
 									</div>
-									<div class="col-12 text-center">
+									<div class="col-12 col-md-7 col-xl-12 order-md-1 order-xl-2 d-md-flex text-center">
 										<div class="footer-copy">Copyright  2017  NOVAVPN.com</div>
 										<div class="footer-support"><a href="mailto:support@novavpn.com">support@novavpn.com</a></div>
 									</div>
@@ -152,5 +168,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 		<script src="js/scripts.js"></script>
+		<script>
+			redirect();
+		</script>
 	</body>
 </html>

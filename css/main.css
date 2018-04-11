@@ -209,7 +209,7 @@ ul {
   font-family: "GothamMedium", sans-serif;
 }
 .advantages-list-item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-left: 45px;
   background: url("../img/icons/list-icon.png") no-repeat 0 0;
 }
@@ -644,13 +644,13 @@ ul {
   text-align: center;
 }
 .get-subtitle {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   padding: 0 12vw;
   font-family: "GothamLight", "GothamMedium", sans-serif;
   text-align: center;
 }
 .get-links {
-  margin-top: 1rem;
+  margin-top: 1.8rem;
 }
 .get-link {
   display: block;
@@ -670,7 +670,7 @@ ul {
 }
 
 .footer {
-  padding: 0 0 2rem;
+  padding: 1rem 0 4rem;
   background-color: #021982;
   font-family: "GothamLight", "GothamMedium", sans-serif;
 }
@@ -690,13 +690,33 @@ ul {
   color: inherit;
 }
 .footer-payment-logos {
-  margin: 1.5rem 0;
+  max-width: 320px;
+  margin: 1.5rem auto;
 }
 .footer-copy, .footer-support {
   font-size: 0.75em;
 }
 .footer-support {
   color: #4a7ed9;
+}
+.footer-support a:hover {
+  color: #8abcf1;
+}
+
+.page-wrapper.thanks-page {
+  background-image: none;
+}
+
+.thanks {
+  background: url("../img/bg/md-bg/curve4.png") no-repeat -370px 35px;
+  padding: 3rem 0;
+}
+.thanks-title {
+  max-width: 290px;
+  margin: 0 auto;
+  font: 2rem "GothamBold", "GothamMedium", sans-serif;
+  color: #202020;
+  text-align: center;
 }
 
 @media only screen and (min-width: 380px) {
@@ -724,6 +744,10 @@ ul {
   .step input {
     max-width: 435px;
     margin: 0 auto;
+  }
+
+  .thanks {
+    background-position: -220px 35px;
   }
 
   /* */
@@ -809,7 +833,7 @@ ul {
   }
 
   .step input {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .step-accordion-btn {
@@ -876,6 +900,19 @@ ul {
 
   .footer-copy {
     margin-right: 15px;
+  }
+
+  .thanks-page .get {
+    padding: 6rem 0;
+  }
+
+  .thanks {
+    padding: 9rem 0 11.8rem;
+    background-image: url("../img/bg/lg-bg/curve4.png");
+    background-position: -500px 135px;
+  }
+  .thanks-title {
+    max-width: 100%;
   }
 
   /* */
@@ -966,6 +1003,13 @@ ul {
     margin: 0 20px 37px;
   }
 
+  .tarrifs-item {
+    width: 300px;
+  }
+  .tarrifs-item.recommend, .tarrifs-item:hover {
+    width: 320px;
+  }
+
   .step-accordion .collapse-form {
     padding: 1rem 2rem 2rem;
   }
@@ -986,9 +1030,12 @@ ul {
   .howTo {
     padding-top: 150px;
   }
+  .howTo-title, .howTo-text {
+    margin-bottom: 1.5rem;
+  }
 
   .steps::before {
-    bottom: -615px;
+    bottom: -630px;
     background-size: 100% 700px;
   }
 
@@ -1005,6 +1052,52 @@ ul {
   }
   .canTry::before {
     right: 22vw;
+  }
+  .canTry-title {
+    margin-bottom: 1.8rem;
+  }
+  .canTry-text {
+    margin-bottom: 1.8rem;
+  }
+
+  .footer-payment-logos {
+    margin: 0.8rem auto;
+  }
+
+  .footer-info {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .thanks-page {
+    min-height: 100vh;
+    height: 1px;
+    background-color: #021982;
+  }
+  .thanks-page .header {
+    background-color: #fff;
+  }
+  .thanks-page .get {
+    padding: 3rem 0;
+  }
+
+  .thanks {
+    background-image: url("../img/bg/lg-bg/curve4.png");
+    background-color: #fff;
+    background-position: -200px 85px;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 1400px) {
+  .thanks {
+    background-position: -800px -46px;
+    background-size: 200%;
   }
 
   /* */

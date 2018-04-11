@@ -17,6 +17,9 @@
 	.step input
 		max-width: 435px
 		margin: 0 auto
+
+	.thanks
+		background-position: -220px 35px
 	/**/
 
 @media only screen and (min-width : 576px)
@@ -80,7 +83,7 @@
 	.step3-guarantee, .step3-confirm
 		text-align: left
 	.step input
-		margin: 0
+		margin: 0 auto
 		
 	.step-accordion-btn
 		padding-bottom: 15px
@@ -138,7 +141,15 @@
 	.footer-copy
 		margin-right: 15px
 
-
+	.thanks-page
+		.get
+			padding: 6rem 0
+	.thanks
+		padding: 9rem 0 11.8rem
+		background-image: url('../img/bg/lg-bg/curve4.png')
+		background-position: -500px 135px
+		&-title
+			max-width: 100%
 	/**/
 
 @media only screen and (min-width : 992px)
@@ -198,6 +209,11 @@
 
 	.tarrifs-item
 		margin: 0 20px 37px
+	.tarrifs
+		&-item
+			width: 300px
+			&.recommend, &:hover
+				width: 320px
 
 	.step-accordion .collapse-form
 		padding: 1rem 2rem 2rem
@@ -211,8 +227,10 @@
 
 	.howTo
 		padding-top: 150px
+		&-title, &-text
+			margin-bottom: 1.5rem
 	.steps::before
-		bottom: -615px
+		bottom: -630px
 		background-size: 100% 700px
 
 	.endorsment-post
@@ -225,6 +243,37 @@
 		padding-top: 200px
 		&::before
 			right: 22vw
+		&-title
+			margin-bottom: 1.8rem
+		&-text
+			margin-bottom: 1.8rem
 
+
+	.footer-payment-logos
+		margin: .8rem auto
+	.footer-info
+		height: 100%
+		display: flex
+		align-items: flex-end
+
+
+	.thanks-page
+		min-height: 100vh
+		height: 1px
+		background-color: #021982
+		.header
+			background-color: #fff
+		.get
+			padding: 3rem 0
+	.thanks
+		background-image: url('../img/bg/lg-bg/curve4.png')
+		background-color: #fff
+		background-position: -200px 85px
 	
+	/**/
+
+@media only screen and (min-width : 1400px)
+	.thanks 
+		background-position: -800px -46px
+		background-size: 200%
 	/**/

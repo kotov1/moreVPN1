@@ -55,4 +55,18 @@ $(function() {
 	setEqualHeight($(".endorsment-post"));
 	});
 
+
+	
+	$(".error").hide();
+	$('.restrict-str').keypress(function(key) { if(key.charCode < 48 || key.charCode > 57) return false; });
+	$("#password-confirm").change(function() {
+		$(".error").hide();
+		var valueX = $("#password").val();
+		var valueY = $("#password-confirm").val();
+		if (valueX != valueY) {
+			$(".error").show();
+		}
+	});
+	
+
 });

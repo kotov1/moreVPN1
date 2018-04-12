@@ -234,6 +234,11 @@ ul {
   color: #dadadb;
   letter-spacing: 1px;
 }
+.steps .error {
+  padding: 5px 0 0;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
+  color: #ff3d4c;
+}
 
 .step:not(:last-child) {
   margin-bottom: 50px;
@@ -741,7 +746,7 @@ ul {
     background-size: auto 170vh;
   }
 
-  .step input {
+  .step input, .step .error {
     max-width: 435px;
     margin: 0 auto;
   }

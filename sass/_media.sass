@@ -11,29 +11,33 @@
 	/**/
 
 @media only screen and (min-width : 480px)
-	.page-wrapper
+	.main-page
 		background-size: auto 170vh
 
-	.step input, .step .error
+	.step2 input, .step .error
 		max-width: 435px
 		margin: 0 auto
 
-	.thanks
-		background-position: -220px 35px
+	.thanks-page
+		.thanks
+			padding-top: 5rem
+		.get
+			padding-top: 9rem
+			background-position: 38% 0
 	/**/
 
 @media only screen and (min-width : 576px)
-	.page-wrapper
+	.main-page
 		background-size: 100% 159vh
 	/**/
 
 @media only screen and (min-width : 768px)
 
-	.page-wrapper
+	.main-page
 		background-image: url('../img/bg/md-bg/curve1.png')
 		background-repeat: no-repeat
 		background-position: 30% 242px
-		background-size: auto 144vh
+		background-size: auto 1310px
 	.devices-img
 		max-width: 552px
 	.reviewer
@@ -42,9 +46,11 @@
 
 
 	.tarrifs
-		min-height: 420px
+		height: 420px
 		display: flex
 		justify-content: center
+		&::before
+			width: 500px
 		&-item
 			width: 240px
 			position: relative
@@ -58,6 +64,9 @@
 					
 					
 		&-purchase
+			width: 200px
+			text-align: center
+			padding: 11px 0
 			opacity: 0
 			transition: all .2s linear
 			
@@ -65,14 +74,6 @@
 	.step1
 		.step-title
 			margin-bottom: 2rem
-
-	.tarrifs
-		&::before
-			width: 500px
-		&-purchase
-			width: 200px
-			text-align: center
-			padding: 11px 0
 
 	.step-accordion .collapse-form
 		padding: 1rem 1rem 2rem
@@ -88,7 +89,7 @@
 	.step-accordion-btn
 		padding-bottom: 15px
 		img
-			margin-left: 20px
+			margin-left: 18px
 			display: inline-block
 			
 
@@ -141,20 +142,35 @@
 	.footer-copy
 		margin-right: 15px
 
+
+
+
+
+
 	.thanks-page
+		min-height: 100vh
+		height: 1px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		background-image: linear-gradient(180deg, #fff, #fff 50%, #021982 50%)
+		.header
+			background-color: #fff
+		.thanks
+			padding: 2rem 0 0
+			background-color: #fff
+			&-title
+				max-width: 100%
 		.get
-			padding: 6rem 0
-	.thanks
-		padding: 9rem 0 11.8rem
-		background-image: url('../img/bg/lg-bg/curve4.png')
-		background-position: -500px 135px
-		&-title
-			max-width: 100%
+			margin: 2px 0
+			padding: 12rem 0 0
+			background: #fff url('../img/bg/lg-bg/curve4.png') no-repeat
+			background-position: 44% -71px
 	/**/
 
 @media only screen and (min-width : 992px)
 
-	.page-wrapper
+	.main-page
 		background-image: url(../img/bg/lg-bg/curve1.png)
 		background-repeat: no-repeat
 		background-position: 0 7vw
@@ -183,11 +199,16 @@
 	.steps
 		&::before
 			bottom: -52vw
+
+
+	.thanks-page
+		.get
+			background-position: 25% -71px
 	/**/
 
 @media only screen and (min-width : 1200px)
 
-	.page-wrapper
+	.main-page
 		background-size: 100% 1200px
 
 	.devices-img
@@ -223,7 +244,7 @@
 		left: 30px
 	.step-accordion-btn-text
 		display: inline-block
-		min-width: 100px
+		min-width: 115px
 
 	.howTo
 		padding-top: 150px
@@ -258,22 +279,29 @@
 
 
 	.thanks-page
-		min-height: 100vh
-		height: 1px
-		background-color: #021982
 		.header
 			background-color: #fff
+		.thanks
+			padding: 9rem 0
+			background-image: url('../img/bg/lg-bg/curve4.png')
+			background-repeat: no-repeat
+			background-position: -200px 85px
 		.get
 			padding: 3rem 0
-	.thanks
-		background-image: url('../img/bg/lg-bg/curve4.png')
-		background-color: #fff
-		background-position: -200px 85px
+			background: #021982
+			
 	
 	/**/
 
 @media only screen and (min-width : 1400px)
-	.thanks 
-		background-position: -800px -46px
-		background-size: 200%
+
+	.canTry
+		padding-bottom: 130px
+
+	.thanks-page
+		.thanks 
+			margin: 2px 0
+			padding: 14.5rem 0
+			background-position: -389px 193px
+			background-size: 150%
 	/**/

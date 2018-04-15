@@ -66,10 +66,13 @@ ul {
 /*GENERAL STYLES END */
 .page-wrapper {
   color: #fff;
+}
+
+.main-page {
   background-image: url("../img/bg/sm-bg/curve1.png");
   background-repeat: no-repeat;
   background-position: 66% 142px;
-  background-size: auto 176vh;
+  background-size: auto 1530px;
 }
 
 .header {
@@ -77,6 +80,9 @@ ul {
 }
 .header-link {
   font-family: "GothamMedium", sans-serif;
+  color: #202020;
+}
+.header-link:hover {
   color: #202020;
 }
 .header-btn {
@@ -215,7 +221,7 @@ ul {
 }
 
 .steps {
-  padding: 60px 0 20px;
+  padding: 70px 0 20px;
   counter-reset: i;
 }
 .steps .form-line {
@@ -294,7 +300,8 @@ ul {
   z-index: 0;
 }
 .tarrifs-item {
-  margin-bottom: 37px;
+  max-width: 320px;
+  margin: 0 auto 37px;
   padding-top: 15px;
   border-radius: 3px;
   text-align: center;
@@ -425,6 +432,7 @@ ul {
   text-align: left;
   color: #202020;
   font: 1em "GothamBold", "GothamMedium", sans-serif;
+  text-transform: uppercase;
   cursor: pointer;
 }
 .step-accordion-btn img {
@@ -675,7 +683,7 @@ ul {
 }
 
 .footer {
-  padding: 1rem 0 4rem;
+  padding: 1rem 0 2rem;
   background-color: #021982;
   font-family: "GothamLight", "GothamMedium", sans-serif;
 }
@@ -708,20 +716,23 @@ ul {
   color: #8abcf1;
 }
 
-.page-wrapper.thanks-page {
+.thanks-page {
   background-image: none;
 }
-
-.thanks {
-  background: url("../img/bg/md-bg/curve4.png") no-repeat -370px 35px;
-  padding: 3rem 0;
+.thanks-page .thanks {
+  padding: 3rem 0 0;
 }
-.thanks-title {
+.thanks-page .thanks-title {
   max-width: 290px;
   margin: 0 auto;
   font: 2rem "GothamBold", "GothamMedium", sans-serif;
   color: #202020;
   text-align: center;
+}
+.thanks-page .get {
+  padding-top: 7rem;
+  background: url("../img/bg/md-bg/curve4.png") no-repeat;
+  background-position: 42% -45px;
 }
 
 @media only screen and (min-width: 380px) {
@@ -742,34 +753,38 @@ ul {
   /* */
 }
 @media only screen and (min-width: 480px) {
-  .page-wrapper {
+  .main-page {
     background-size: auto 170vh;
   }
 
-  .step input, .step .error {
+  .step2 input, .step .error {
     max-width: 435px;
     margin: 0 auto;
   }
 
-  .thanks {
-    background-position: -220px 35px;
+  .thanks-page .thanks {
+    padding-top: 5rem;
+  }
+  .thanks-page .get {
+    padding-top: 9rem;
+    background-position: 38% 0;
   }
 
   /* */
 }
 @media only screen and (min-width: 576px) {
-  .page-wrapper {
+  .main-page {
     background-size: 100% 159vh;
   }
 
   /* */
 }
 @media only screen and (min-width: 768px) {
-  .page-wrapper {
+  .main-page {
     background-image: url("../img/bg/md-bg/curve1.png");
     background-repeat: no-repeat;
     background-position: 30% 242px;
-    background-size: auto 144vh;
+    background-size: auto 1310px;
   }
 
   .devices-img {
@@ -781,13 +796,16 @@ ul {
   }
 
   .tarrifs {
-    min-height: 420px;
+    height: 420px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .tarrifs::before {
+    width: 500px;
   }
   .tarrifs-item {
     width: 240px;
@@ -805,6 +823,9 @@ ul {
     transition: all 0.2s linear;
   }
   .tarrifs-purchase {
+    width: 200px;
+    text-align: center;
+    padding: 11px 0;
     opacity: 0;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
@@ -812,15 +833,6 @@ ul {
 
   .step1 .step-title {
     margin-bottom: 2rem;
-  }
-
-  .tarrifs::before {
-    width: 500px;
-  }
-  .tarrifs-purchase {
-    width: 200px;
-    text-align: center;
-    padding: 11px 0;
   }
 
   .step-accordion .collapse-form {
@@ -845,7 +857,7 @@ ul {
     padding-bottom: 15px;
   }
   .step-accordion-btn img {
-    margin-left: 20px;
+    margin-left: 18px;
     display: inline-block;
   }
 
@@ -907,23 +919,43 @@ ul {
     margin-right: 15px;
   }
 
-  .thanks-page .get {
-    padding: 6rem 0;
+  .thanks-page {
+    min-height: 100vh;
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #021982));
+    background-image: linear-gradient(180deg, #fff, #fff 50%, #021982 50%);
   }
-
-  .thanks {
-    padding: 9rem 0 11.8rem;
-    background-image: url("../img/bg/lg-bg/curve4.png");
-    background-position: -500px 135px;
+  .thanks-page .header {
+    background-color: #fff;
   }
-  .thanks-title {
+  .thanks-page .thanks {
+    padding: 2rem 0 0;
+    background-color: #fff;
+  }
+  .thanks-page .thanks-title {
     max-width: 100%;
+  }
+  .thanks-page .get {
+    margin: 2px 0;
+    padding: 12rem 0 0;
+    background: #fff url("../img/bg/lg-bg/curve4.png") no-repeat;
+    background-position: 44% -71px;
   }
 
   /* */
 }
 @media only screen and (min-width: 992px) {
-  .page-wrapper {
+  .main-page {
     background-image: url(../img/bg/lg-bg/curve1.png);
     background-repeat: no-repeat;
     background-position: 0 7vw;
@@ -965,10 +997,14 @@ ul {
     bottom: -52vw;
   }
 
+  .thanks-page .get {
+    background-position: 25% -71px;
+  }
+
   /* */
 }
 @media only screen and (min-width: 1200px) {
-  .page-wrapper {
+  .main-page {
     background-size: 100% 1200px;
   }
 
@@ -1029,7 +1065,7 @@ ul {
 
   .step-accordion-btn-text {
     display: inline-block;
-    min-width: 100px;
+    min-width: 115px;
   }
 
   .howTo {
@@ -1079,30 +1115,32 @@ ul {
             align-items: flex-end;
   }
 
-  .thanks-page {
-    min-height: 100vh;
-    height: 1px;
-    background-color: #021982;
-  }
   .thanks-page .header {
     background-color: #fff;
   }
+  .thanks-page .thanks {
+    padding: 9rem 0;
+    background-image: url("../img/bg/lg-bg/curve4.png");
+    background-repeat: no-repeat;
+    background-position: -200px 85px;
+  }
   .thanks-page .get {
     padding: 3rem 0;
-  }
-
-  .thanks {
-    background-image: url("../img/bg/lg-bg/curve4.png");
-    background-color: #fff;
-    background-position: -200px 85px;
+    background: #021982;
   }
 
   /* */
 }
 @media only screen and (min-width: 1400px) {
-  .thanks {
-    background-position: -800px -46px;
-    background-size: 200%;
+  .canTry {
+    padding-bottom: 130px;
+  }
+
+  .thanks-page .thanks {
+    margin: 2px 0;
+    padding: 14.5rem 0;
+    background-position: -389px 193px;
+    background-size: 150%;
   }
 
   /* */

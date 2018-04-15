@@ -33,19 +33,21 @@ ul
 
 /*GENERAL STYLES END*/
 
-
 .page-wrapper
 	color: #fff
+.main-page
 	background-image: url('../img/bg/sm-bg/curve1.png')
 	background-repeat: no-repeat
 	background-position: 66% 142px
-	background-size: auto 176vh
+	background-size: auto 1530px
 
 .header
 	padding: 20px 0 10px
 	&-link
 		font-family: $main_font
 		color: $title_color
+		&:hover
+			color: $title_color
 	&-btn
 		display: block
 		width: 156px
@@ -153,7 +155,7 @@ ul
 
 		
 .steps
-	padding: 60px 0 20px
+	padding: 70px 0 20px
 	counter-reset: i
 	.form-line
 		padding: 10px 0
@@ -219,7 +221,8 @@ ul
 		background-size: 100%
 		z-index: 0
 	&-item
-		margin-bottom: 37px
+		max-width: 320px
+		margin: 0 auto 37px
 		padding-top: 15px
 		border-radius: 3px
 		text-align: center
@@ -333,6 +336,7 @@ ul
 			text-align: left
 			color: $title_color
 			font: 1em $bold_font
+			text-transform: uppercase
 			cursor: pointer
 			
 			img
@@ -552,7 +556,7 @@ ul
 
 
 .footer
-	padding: 1rem 0 4rem
+	padding: 1rem 0 2rem
 	background-color: #021982
 	font-family: $think_font
 	&-list-title
@@ -579,18 +583,26 @@ ul
 			&:hover
 				color: #8abcf1
 
-.page-wrapper.thanks-page
+
+
+
+
+.thanks-page
 	background-image: none
 	
-.thanks
-	background: url('../img/bg/md-bg/curve4.png') no-repeat -370px 35px
-	padding: 3rem 0
-	&-title
-		max-width: 290px
-		margin: 0 auto
-		font: 2rem $bold_font
-		color: $title_color
-		text-align: center
+	.thanks
+		padding: 3rem 0 0
+		&-title
+			max-width: 290px
+			margin: 0 auto
+			font: 2rem $bold_font
+			color: $title_color
+			text-align: center
+
+	.get
+		padding-top: 7rem
+		background: url('../img/bg/md-bg/curve4.png') no-repeat
+		background-position: 42% -45px
 		
 
 

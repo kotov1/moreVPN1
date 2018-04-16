@@ -392,6 +392,9 @@ ul {
   color: #383c43;
   text-align: center;
 }
+.step-info a {
+  color: #005cfe;
+}
 .step-accordion .card {
   border: none;
 }
@@ -1103,6 +1106,10 @@ ul {
 
   .footer-payment-logos {
     margin: 0.8rem auto;
+  }
+  .footer-payment-logos img {
+    display: inline-block;
+    margin-left: 10px;
   }
 
   .footer-info {

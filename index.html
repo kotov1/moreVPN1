@@ -134,32 +134,32 @@
 							</div>
 							<div class="col-12">
 								<div class="tarrifs">	
-
-										<div class="tarrifs-item recommend order-md-2">
-											<div class="tarrifs-name">super heavy</div>
-											<div class="tarrifs-img-wrap"><img src="img/superheavy.svg" alt="superheavy" class="tarrifs-img"></div>
-											<p class="tarrifs-description">1 - year plan</p>
-											<p class="tarrifs-price"><span class="symbol">$</span>5.82<span class="period">/m</span></p>
-											<button class="btn tarrifs-purchase">Get 1 Year Plan</button>
-										</div>
-
-									<div class="tarrifs-item order-md-3">
-											<div class="tarrifs-name">heavy</div>
-											<div class="tarrifs-img-wrap"><img src="img/heavy.svg" alt="heavy" class="tarrifs-img"></div>
-											<p class="tarrifs-description">6 - month plan</p>
-											<p class="tarrifs-price"><span class="symbol">$</span>6.99<span class="period">/m</span></p>
-											<button class="btn tarrifs-purchase">Get 6 months Plan</button>
-										</div>
-
-										<div class="tarrifs-item order-md-1">
-											<div class="tarrifs-name">medium</div>
-											<div class="tarrifs-img-wrap"><img src="img/medium.svg" alt="medium" class="tarrifs-img"></div>
-											<p class="tarrifs-description">1 - months plan</p>
-											<p class="tarrifs-price"><span class="symbol">$</span>7.99<span class="period">/m</span></p>
-											<button class="btn tarrifs-purchase">Get 1 month Plan</button>
-										</div>
-
+									
+									<div class="tarrifs-item recommend order-md-2">
+										<div class="tarrifs-name">super heavy</div>
+										<div class="tarrifs-img-wrap"><img src="img/superheavy.svg" alt="superheavy" class="tarrifs-img"></div>
+										<p class="tarrifs-description">1 - year plan</p>
+										<p class="tarrifs-price"><span class="symbol">$</span>5.82<span class="period">/m</span></p>
+										<button class="btn tarrifs-purchase">Get 1 Year Plan</button>
 									</div>
+
+								<div class="tarrifs-item order-md-3">
+										<div class="tarrifs-name">heavy</div>
+										<div class="tarrifs-img-wrap"><img src="img/heavy.svg" alt="heavy" class="tarrifs-img"></div>
+										<p class="tarrifs-description">6 - month plan</p>
+										<p class="tarrifs-price"><span class="symbol">$</span>6.99<span class="period">/m</span></p>
+										<button class="btn tarrifs-purchase">Get 6 months Plan</button>
+									</div>
+
+									<div class="tarrifs-item order-md-1">
+										<div class="tarrifs-name">medium</div>
+										<div class="tarrifs-img-wrap"><img src="img/medium.svg" alt="medium" class="tarrifs-img"></div>
+										<p class="tarrifs-description">1 - months plan</p>
+										<p class="tarrifs-price"><span class="symbol">$</span>7.99<span class="period">/m</span></p>
+										<button class="btn tarrifs-purchase">Get 1 month Plan</button>
+									</div>
+
+								</div>
 							</div>
 							<div class="col-12 d-flex justify-content-center">
 								<div class="steps-guarantee">7- Days money back guarantee</div>
@@ -173,22 +173,21 @@
 								<div class="step-title">Your account information</div>
 							</div>
 							<div class="col-12">
-								<div class="step-info">Already signed up? <a href="#">Sign in now</a></div>
-							</div>
-							<div class="col-12">
-								<form action="#" id="login-form">
-									<div class="form-line">
-										<input type="email" name="email" class="form-control" placeholder="Your email">
-									</div>
-									<div class="form-line">
-										<input type="password" name="password" class="form-control" id="password" autocomplete="off" placeholder="Password">
-									</div>
-									<div class="form-line">
-										<input type="password" name="password_confirm" class="form-control" id="password_confirm" autocomplete="off" placeholder="Confirm password">
-										<div class="error">Passwords do not match</div>
-									</div>
-									<div class="form-text">We are committed to keeping your information confidential, and will use it solely to provide you with content and login information related to NOVAVPN.</div>
-								</form>
+								<div class="collapse" id="login-collapse">
+									<div class="step-info">Already signed up? <a href="#">Sign in now</a></div>
+									<form action="#" id="login-form">
+										<div class="form-line">
+											<input type="email" name="email" class="form-control" placeholder="Your email">
+										</div>
+										<div class="form-line">
+											<input type="password" name="password" class="form-control" id="password" autocomplete="off" placeholder="Password">
+										</div>
+										<div class="form-line">
+											<input type="password" name="password_confirm" class="form-control" id="password_confirm" autocomplete="off" placeholder="Confirm password">
+										</div>
+										<div class="form-text">We are committed to keeping your information confidential, and will use it solely to provide you with content and login information related to NOVAVPN.</div>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div> <!-- /.step2 -->
@@ -199,10 +198,8 @@
 									<div class="step-title">Enter billing information</div>
 								</div>
 								<div class="col-12">
-									<div class="step-info">You will not be billed until your trial ends</div>
-								</div>
-								<div class="col-12">
-									<div class="step-accordion" id="step-accordion">
+									<div class="step-accordion collapse" id="step-accordion">
+										<div class="step-info">You will not be billed until your trial ends</div>
 										<div class="card">
 												<div class="card-header" id="headingOne">
 													<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

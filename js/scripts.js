@@ -57,7 +57,7 @@ $(function() {
 
 
 	
-		// FORM VALIDATION
+	// FORM VALIDATION
 	$('.card-firstName, .card-lastName').keypress(function(key) { ;
 		if((key.charCode >= 33 && key.charCode <= 64) || (key.charCode <= 91 && key.charCode <= 96) || (key.charCode >= 123 && key.charCode <= 127)) return false;
 	});
@@ -78,6 +78,11 @@ $(function() {
 	$('.card-coupon').mask("0000 0000 0000 0000");
 
 
+	$('.tarrifs-item').click(function() {
+		$('#login-collapse').collapse();
+		var top = $('#login-collapse').offset().top;
+		$('body,html').animate({scrollTop: top-100}, 1000);
+	});
 
 	$("#login-form").validate({
 			rules: {
@@ -107,6 +112,12 @@ $(function() {
 			}
 		});
 
+
+	$('.step2 input').change(function() {
+		if($("#login-form").valid()) {
+			$('#step-accordion').collapse();
+		}
+	})
 
 	$(".payment-form1").validate({
 			rules: {

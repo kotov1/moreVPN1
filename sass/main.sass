@@ -171,9 +171,9 @@ ul
 		text-transform: uppercase
 		color: #dadadb
 		letter-spacing: 1px
-	.error
-		padding: 5px 0 0
-		font: 14px "GothamLight", "GothamMedium", sans-serif
+		
+	.error+.error
+		font-family: "GothamLight", "GothamMedium", sans-serif
 		color: #ff3d4c
 
 
@@ -346,7 +346,7 @@ ul
 				
 
 .step3
-	label
+	label:not(.error)
 		position: relative
 		font: 12px $main_font
 		color: #383c43	

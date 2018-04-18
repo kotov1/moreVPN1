@@ -240,9 +240,8 @@ ul {
   color: #dadadb;
   letter-spacing: 1px;
 }
-.steps .error {
-  padding: 5px 0 0;
-  font: 14px "GothamLight", "GothamMedium", sans-serif;
+.steps .error + .error {
+  font-family: "GothamLight", "GothamMedium", sans-serif;
   color: #ff3d4c;
 }
 
@@ -442,7 +441,7 @@ ul {
   display: none;
 }
 
-.step3 label {
+.step3 label:not(.error) {
   position: relative;
   font: 12px "GothamMedium", sans-serif;
   color: #383c43;
@@ -760,7 +759,7 @@ ul {
     background-size: auto 170vh;
   }
 
-  .step2 input, .step .error {
+  .step2 input {
     max-width: 435px;
     margin: 0 auto;
   }
@@ -850,6 +849,11 @@ ul {
 
   .step3-guarantee, .step3-confirm {
     text-align: left;
+  }
+
+  .step3-guarantee {
+    padding: 10px 0 10px 40px;
+    background: url("../img/icons/guarantee30.png") no-repeat 0 0;
   }
 
   .step input {

@@ -501,8 +501,6 @@ ul
 	&-logo
 		margin-top: auto
 		text-align: left
-		
-		
 .endorsment1-img, .endorsment2-img
 	left: -66px
 .endorsment3-img
@@ -610,18 +608,191 @@ ul
 	.thanks
 		padding: 3rem 0 0
 		&-title
-			max-width: 290px
-			margin: 0 auto
-			font: 2rem $bold_font
+			margin-bottom: 3rem
+			font: 2.625rem $bold_font
 			color: $title_color
 			text-align: center
+	.info
+		overflow-x: hidden
+		&-title
+			margin-bottom: 1.5rem
+			font: 1.125rem $main_font
+			color: #262527
+			text-align: center
+		&-device
+			font: 1.125rem $bold_font
+			color: #292929
+			text-transform: uppercase
+			letter-spacing: 2px
+			&-descr
+				font-family: $think_font
+				color: #262527
+		&-os
+			padding: 1rem
+			&-icon
+				display: inline-block
+				width: 55px
+				height: 55px
+				background: url('../img/icons/os-sprite.png') no-repeat
+			&-andr
+				margin-right: 15px
+				background-position: 0 0
+			&-ios
+				background-position: -64px 0
+			&-win
+				margin-right: 15px
+				background-position: -127px 0
+			&-app
+				background-position: -190px 0
 
-	.get
+	.faq
 		padding-top: 7rem
 		background: url('../img/bg/md-bg/curve4.png') no-repeat
 		background-position: 42% -45px
-		
+		color: #fff
+		&-title
+			display: inline-block
+			font-family: $main_font
+			position: relative
+			&::before
+				content: ''
+				display: block
+				width: 17px
+				height: 11px
+				position: absolute
+				right: -25px
+				top: 33%
+				transform: translateY(-50%)
+				background: url('../img/icons/Arrow---Right.png') no-repeat 0 0
+				transition: all .2s
+			&:active
+				&::before
+					right: -30px
+					transition: all 0.1s
+		&-list
+			font-family: $think_font
+			padding-left: 1rem
+			list-style-type: disc
+			.faq-link
+				color: rgba(#fff, .8)
+		&-link
+			display: inline-block
+			margin-bottom: 1rem
+			color: #fff
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			
+									
 
+.payment-page
+	min-height: 100vh
+	height: 1px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background: url('../img/bg/payment/bg.png') no-repeat 50% 0
+	background-size: cover
+	
+	.footer
+		margin-top: auto
+
+.payment-wait
+	min-width: 290px
+	position: fixed
+	top: 32%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+.payment-wait-outer, .payment-wait-inner
+	margin: 0 auto
+	position: relative
+	color: #fff
+	text-align: center
+	border-radius: 50%
+	transition: .5s ease-in-out
+		
+.payment-wait-outer
+	width: 28px
+	height: 28px
+.payment-wait-inner
+	border: 2px solid #fff
+	width: 28px
+	height: 28px
+.payment-wait-outer::before,
+.payment-wait-inner::before,
+.payment-wait-inner::after
+	content: ''
+	position: absolute
+	border: 5px solid #fff
+	left: -20px
+	right: -20px
+	top: -20px
+	bottom: -20px
+	border-radius: 50%
+	animation: pulse 2.4s linear infinite
+	opacity: 0
+.payment-wait-inner::after 
+	animation-delay: 0.8s
+.payment-wait-outer::before
+	animation-delay: 1.6s
+
+.payment-wait-outer::after
+	content: ''
+	position: absolute
+	bottom: -40px
+	left: 50%
+	transform: translateX(-50%)
+	background-color: rgba(1, 52, 107,.5)
+	border-radius: 50%
+	display: block
+	width: 40px
+	height: 5px
+
+
+.payment-wait-text
+	margin-top: 60px
+	font: 14px $think_font
+	text-align: center
+	&-accent
+		text-transform: uppercase
+		color: #00faa5
+
+.payment-complete
+	display: none
+	width: 13px
+	height: 10px
+	margin: 0 auto
+	background: url('../img/icons/complete.png') no-repeat 50% 50%
+
+.payment-wait
+	&.completed
+		.payment-wait-outer, .payment-wait-inner
+			background-color: #00faa5
+			border-color: #00faa5
+		.payment-wait-outer::before,
+		.payment-wait-inner::before,
+		.payment-wait-inner::after
+			border-color: #00faa5
+			animation-play-state: paused
+		.payment-complete
+			display: inline-block
+
+
+@keyframes pulse
+	0%
+		transform: scale(0.5)
+		opacity: 0
+		border-width: 4px
+
+	50%
+		opacity: 1
+		border-width: 1px
+
+	100%
+		transform: scale(1.2)
+		opacity: 0
+		border-width: 0
 
 
 

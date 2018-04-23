@@ -677,11 +677,29 @@ ul
 				color: rgba(#fff, .8)
 		&-link
 			display: inline-block
+			position: relative
 			margin-bottom: 1rem
 			color: #fff
-			text-decoration: underline
+			text-decoration: none
+			cursor: pointer
 			&:hover
 				text-decoration: none
+				color: #fff
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				bottom: 0
+				left: 0
+				background-color: #fff
+				visibility: hidden
+				visibility: visible
+				transform: scaleX(1)
+				transition: all .3s
+			&:hover::after
+				transform: scaleX(0)
+				transition: all .4s
 			
 									
 

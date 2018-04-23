@@ -782,12 +782,32 @@ ul {
 }
 .thanks-page .faq-link {
   display: inline-block;
+  position: relative;
   margin-bottom: 1rem;
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
 }
 .thanks-page .faq-link:hover {
   text-decoration: none;
+  color: #fff;
+}
+.thanks-page .faq-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  visibility: visible;
+  transform: scaleX(1);
+  transition: all 0.3s;
+}
+.thanks-page .faq-link:hover::after {
+  transform: scaleX(0);
+  transition: all 0.4s;
 }
 
 .payment-page {

@@ -845,7 +845,6 @@ ul {
 }
 .thanks-page .faq-link:hover {
   text-decoration: none;
-  color: #fff;
 }
 .thanks-page .faq-link::after {
   content: "";

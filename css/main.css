@@ -714,6 +714,9 @@ ul {
   background-color: #021982;
   font-family: "GothamLight", "GothamMedium", sans-serif;
 }
+.footer-links {
+  font-size: 14px;
+}
 .footer-list-title {
   padding: 0.55rem 0;
   text-decoration: underline;
@@ -723,7 +726,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-size: 14px;
 }
 .footer-list a {
   display: inline-block;

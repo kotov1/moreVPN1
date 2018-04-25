@@ -298,7 +298,7 @@ ul {
 }
 .steps input {
   padding: 1.1rem 0.5rem 1.1rem 2rem;
-  font: 16px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   letter-spacing: 1px;
 }
 .steps input::-webkit-input-placeholder {
@@ -328,6 +328,13 @@ ul {
 .steps .error + .error {
   font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #ff3d4c;
+}
+.steps-guarantee {
+  margin-top: 10px;
+  padding-left: 35px;
+  background: url("../img/icons/guarantee.png") no-repeat 0 0;
+  color: #202020;
+  font-family: "GothamBold", "GothamMedium", sans-serif;
 }
 
 .step:not(:last-child) {
@@ -362,6 +369,62 @@ ul {
   border-radius: 50%;
   counter-increment: i;
   content: counter(i,decimal);
+}
+.step-info {
+  margin: 0.5rem 0 0.85rem;
+  font-family: "GothamLight", "GothamMedium", sans-serif;
+  color: #383c43;
+  text-align: center;
+}
+.step-info a {
+  color: #005cfe;
+}
+.step-accordion .card {
+  border: none;
+}
+.step-accordion .card-body {
+  padding-bottom: 0;
+}
+.step-accordion .card-header {
+  position: relative;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.step-accordion .card-header::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  border-top: 2px solid #202020;
+  border-right: 2px solid #202020;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+  z-index: 0;
+}
+.step-accordion .card-header.opened::before {
+  top: 35%;
+  -webkit-transform: rotate(135deg) translateY(-50%);
+          transform: rotate(135deg) translateY(-50%);
+}
+.step-accordion-btn {
+  width: 100%;
+  padding: 20px 20px 20px 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
+  color: #202020;
+  font: 1em "GothamBold", "GothamMedium", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.step-accordion-btn img {
+  display: none;
+  max-height: 25px;
 }
 
 .tarrifs {
@@ -459,75 +522,10 @@ ul {
           transform: translateY(50%);
 }
 
-.steps-guarantee {
-  margin-top: 10px;
-  padding-left: 35px;
-  background: url("../img/icons/guarantee.png") no-repeat 0 0;
-  color: #202020;
-  font-family: "GothamBold", "GothamMedium", sans-serif;
-}
-
 .step2-sign {
   font-family: "GothamLight", "GothamMedium", sans-serif;
   color: #383c43;
   text-align: center;
-}
-
-.step-info {
-  margin: 0.5rem 0 0.85rem;
-  font-family: "GothamLight", "GothamMedium", sans-serif;
-  color: #383c43;
-  text-align: center;
-}
-.step-info a {
-  color: #005cfe;
-}
-.step-accordion .card {
-  border: none;
-}
-.step-accordion .card-body {
-  padding-bottom: 0;
-}
-.step-accordion .card-header {
-  position: relative;
-  padding: 0;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-}
-.step-accordion .card-header::before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  border-top: 2px solid #202020;
-  border-right: 2px solid #202020;
-  -webkit-transform: rotate(45deg) translateY(-50%);
-          transform: rotate(45deg) translateY(-50%);
-  z-index: 0;
-}
-.step-accordion .card-header.opened::before {
-  top: 35%;
-  -webkit-transform: rotate(135deg) translateY(-50%);
-          transform: rotate(135deg) translateY(-50%);
-}
-.step-accordion-btn {
-  width: 100%;
-  padding: 20px 20px 20px 50px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  text-align: left;
-  color: #202020;
-  font: 1em "GothamBold", "GothamMedium", sans-serif;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.step-accordion-btn img {
-  display: none;
-  max-height: 25px;
 }
 
 .step3 label:not(.error) {
@@ -847,7 +845,7 @@ ul {
   font-weight: bold;
 }
 .footer-support a:hover {
-  color: #8abcf1;
+  color: #3351ff;
 }
 
 .thanks-page {
@@ -1245,10 +1243,6 @@ ul {
     margin-top: 11px;
   }
 
-  .step3-guarantee, .step3-confirm, .tarrif-info, .step3-contact {
-    text-align: left;
-  }
-
   .step3-guarantee {
     padding: 10px 0 10px 45px;
     position: relative;
@@ -1270,6 +1264,10 @@ ul {
 
   .step-accordion-btn {
     padding-bottom: 15px;
+  }
+  .step-accordion-btn-text {
+    min-width: 115px;
+    display: inline-block;
   }
   .step-accordion-btn img {
     margin-left: 18px;
@@ -1469,7 +1467,7 @@ ul {
   .tarrifs-item {
     width: 300px;
   }
-  .tarrifs-item.recommend, .tarrifs-item:hover {
+  .tarrifs-item.recommend {
     width: 320px;
   }
 
@@ -1483,11 +1481,6 @@ ul {
 
   .step-accordion .card-header::before {
     left: 30px;
-  }
-
-  .step-accordion-btn-text {
-    display: inline-block;
-    min-width: 115px;
   }
 
   .howTo {

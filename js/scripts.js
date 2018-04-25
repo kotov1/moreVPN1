@@ -1,10 +1,8 @@
 
 $(function() {
 
-	// Фиксирование состояние рекомендованной карточки тарифного плана
 
-
-
+	// arrows in step3 accordion
 	$('.card-header').click(function() {
 		if ($(this).hasClass('opened')) {
 			$(this).removeClass('opened');
@@ -17,6 +15,7 @@ $(function() {
 
 	$('.my-tooltip').tooltip();
 
+	// initialization and destroy of accordion footer links
 	function adjustCollapseView(){
 		var desktopView = $(document).width();
 		if(desktopView >= "768"){
@@ -27,7 +26,6 @@ $(function() {
 			$(".footer-list").addClass('collapse');
 		}
 	}
-
 	$(function(){
 		adjustCollapseView();
 		$(window).on("resize", function(){
@@ -35,6 +33,7 @@ $(function() {
 		});
 	});
 
+	// equalheight of cards in section endorsed by
 	function setEqualHeight(columns){
 	var tallestcolumn = 0;
 	columns.each(function(){
@@ -50,6 +49,7 @@ $(function() {
 	});
 
 
+
 	$('.js-scrollToPlans').click(function(event) {
 		event.preventDefault;
 		var top = $('.step1').offset().top;
@@ -58,10 +58,14 @@ $(function() {
 
 	
 	// FORM VALIDATION
+
+	// restricting numbers
 	$('.card-firstName, .card-lastName').keypress(function(key) { ;
 		if((key.charCode >= 33 && key.charCode <= 64) || (key.charCode >= 91 && key.charCode <= 96) || (key.charCode >= 123 && key.charCode <= 127)) return false;
 	});
 
+
+	// jquery input mask
 	$('.card-number').mask("0000 0000 0000 0000");
 	$('.card-date').mask("AZ / 00", {
 		translation: {
@@ -77,8 +81,8 @@ $(function() {
 	$('.card-postal').mask("000");
 
 
+	// tarrif plan click behaviour
 	var choise = 0;
-
 	$('.tarrifs-item').on('click', function() {
 		var top;
 		$('.tarrifs-item').removeClass('recommend current');
@@ -91,7 +95,7 @@ $(function() {
 		choise = 1;
 	});
 
-
+	// tarrif plan hovering
 	$(".tarrifs-item").mouseenter( function(){
 		$(".tarrifs-item").removeClass('recommend');	
 		$(this).addClass('recommend');
@@ -104,11 +108,10 @@ $(function() {
 			$(".tarrifs-item").removeClass('recommend');	
 			$(".tarrifs-item.current").addClass('recommend');
 		}
-	
 	});
 
 
-
+	// changing info in payment card
 	function appendTarrifInfo() {
 		if($('.tarrifs-item1').hasClass('recommend')) {
 			$('.tarrif-info').text('NovaVPN 1 year plan ($65.00 one-time payment)');
@@ -148,7 +151,6 @@ $(function() {
 				}
 			}
 		});
-
 
 	$('.step2 input').change(function() {
 		if($("#login-form").valid()) {
@@ -199,9 +201,9 @@ $(function() {
 			}
 		});
 
+	// test redirecting to payment page
 	$('.js-redirect').click(function(event) {
 		event.preventDefault;
-		console.log('cl');
 		if($(this).closest('form').valid()) {
 			location.replace("payment.html");
 		}

@@ -202,6 +202,8 @@ ul
 			background: url('../img/icons/list-icon.png') no-repeat 0 0
 
 		
+
+
 .steps
 	padding: 70px 0 20px
 	counter-reset: i
@@ -215,7 +217,7 @@ ul
 		
 	input
 		padding: 1.1rem .5rem 1.1rem 2rem
-		font: 16px $think_font
+		font: 14px $think_font
 		letter-spacing: 1px
 		&::placeholder
 			text-transform: uppercase
@@ -227,6 +229,12 @@ ul
 		font: 14px "GothamLight", "GothamMedium", sans-serif
 		color: #ff3d4c
 
+	&-guarantee
+		margin-top: 10px
+		padding-left: 35px
+		background: url('../img/icons/guarantee.png') no-repeat 0 0
+		color: $title_color
+		font-family: $bold_font
 
 .step
 	&:not(:last-child)
@@ -253,6 +261,56 @@ ul
 			border-radius: 50%
 			counter-increment: i
 			content: counter(i, decimal)
+
+	&-info
+		margin: .5rem 0 .85rem
+		font-family: $think_font
+		color: #383c43
+		text-align: center
+		a
+			color: #005cfe
+
+	&-accordion
+		.card
+			border: none
+		.card-body
+			padding-bottom: 0
+		.card-header
+			position: relative
+			padding: 0
+			background-color: #fff
+			border: 1px solid rgba(0,0,0,.125)
+			&::before
+				content: ''
+				display: block
+				width: 10px
+				height: 10px
+				position: absolute
+				left: 20px
+				top: 50%
+				border-top: 2px solid $title_color
+				border-right: 2px solid $title_color
+				transform: rotate(45deg) translateY(-50%)
+				z-index: 0
+			&.opened
+				&::before
+					top: 35%
+					transform: rotate(135deg) translateY(-50%)
+		&-btn
+			width: 100%
+			padding: 20px 20px 20px 50px
+			border: none
+			outline: none
+			background-color: transparent
+			text-align: left
+			color: $title_color
+			font: 1em $bold_font
+			text-transform: uppercase
+			cursor: pointer
+			
+			img
+				display: none
+				max-height: 25px
 		
 
 .tarrifs
@@ -331,71 +389,6 @@ ul
 		transform: translateY(50%)
 
 
-
-.steps
-	&-guarantee
-		margin-top: 10px
-		padding-left: 35px
-		background: url('../img/icons/guarantee.png') no-repeat 0 0
-		color: $title_color
-		font-family: $bold_font
-
-.step2
-	&-sign
-		font-family: $think_font
-		color: #383c43
-		text-align: center
-		
-.step
-	&-info
-		margin: .5rem 0 .85rem
-		font-family: $think_font
-		color: #383c43
-		text-align: center
-		a
-			color: #005cfe
-
-	&-accordion
-		.card
-			border: none
-		.card-body
-			padding-bottom: 0
-		.card-header
-			position: relative
-			padding: 0
-			background-color: #fff
-			border: 1px solid rgba(0,0,0,.125)
-			&::before
-				content: ''
-				display: block
-				width: 10px
-				height: 10px
-				position: absolute
-				left: 20px
-				top: 50%
-				border-top: 2px solid $title_color
-				border-right: 2px solid $title_color
-				transform: rotate(45deg) translateY(-50%)
-				z-index: 0
-			&.opened
-				&::before
-					top: 35%
-					transform: rotate(135deg) translateY(-50%)
-		&-btn
-			width: 100%
-			padding: 20px 20px 20px 50px
-			border: none
-			outline: none
-			background-color: transparent
-			text-align: left
-			color: $title_color
-			font: 1em $bold_font
-			text-transform: uppercase
-			cursor: pointer
-			
-			img
-				display: none
-				max-height: 25px
 				
 .step3
 	label:not(.error)
@@ -469,8 +462,6 @@ ul
 		margin: 10px
 		max-height: 30px
 		
-		
-	
 .collapse-form
 	padding: 10px 0 20px
 
@@ -675,7 +666,7 @@ ul
 			color: #0025ff
 			font-weight: bold
 			&:hover
-				color: #8abcf1
+				color: lighten(#0025ff, 10%)
 
 
 

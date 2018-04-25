@@ -75,7 +75,6 @@ $(function() {
 	});
 	$('.card-cvv').mask("000");
 	$('.card-postal').mask("000");
-	$('.card-coupon').mask("0000 0000 0000 0000");
 
 
 	var choise = 0;
@@ -176,10 +175,7 @@ $(function() {
 				inputPostalCode1: {
 					required: true,
 					minlength: 3
-				},
-				inputCoupon1: {
-					minlength: 19
-				}	
+				}
 			},
 			messages: {
 				inputFirstName1: "Please enter your firstname",
@@ -199,10 +195,7 @@ $(function() {
 				inputPostalCode1: {
 					required: "Please provide a postal code",
 					minlength: "The number must contain at least 3 numbers"
-				},
-				inputCoupon1: {
-					minlength: "The number must contain at least 16 numbers"
-				},
+				}
 			}
 		});
 

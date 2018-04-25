@@ -81,11 +81,22 @@
 		background-color: #fafafa
 	.step-form-btn
 		margin-top: 11px
-	.step3-guarantee, .step3-confirm
+	.step3-guarantee, .step3-confirm, .tarrif-info, .step3-contact
 		text-align: left
+
 	.step3-guarantee
-		padding: 10px 0 10px 40px
-		background: url('../img/icons/guarantee30.png') no-repeat 0 0
+		padding: 10px 0 10px 45px
+		position: relative
+		&::before
+			content: ''
+			width: 37px
+			height: 32px
+			position: absolute
+			left: 0
+			top: 0
+			background: url('../img/icons/7guarantee.svg') no-repeat 50% 50%
+			z-index: 0
+
 	.step input
 		margin: 0 auto
 		
@@ -114,6 +125,11 @@
 			max-width: 645px
 		.step-info
 			margin: 1.5rem 0 1.85rem
+
+	.payment-form-info
+		height: 1px
+
+
 
 	.howTo
 		background-image: none
@@ -146,7 +162,7 @@
 		margin-right: 15px
 
 
-
+	
 
 
 
@@ -295,7 +311,7 @@
 		.header
 			background-color: #fff
 		.thanks
-			padding: 2rem 0 4rem
+			padding: 2rem 0 6rem
 			background-image: url('../img/bg/lg-bg/curve4.png')
 			background-repeat: no-repeat
 			background-position: -200px 159px

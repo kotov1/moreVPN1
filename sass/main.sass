@@ -49,6 +49,7 @@ ul
 		&:hover
 			color: $title_color
 	&-btn
+		position: relative
 		display: block
 		width: 156px
 		height: 42px
@@ -56,11 +57,57 @@ ul
 		border: none
 		outline: none
 		cursor: pointer
-		
 		&:active
-			transform: translate(1px, 1px)
+			top: 1px
+			left: 1px
 		&:focus
 			outline: none
+
+@supports (-webkit-background-clip: text)
+	.header-btn
+		border: 2px solid transparent
+		background: #fff
+		position: relative
+		background-clip: padding-box
+		padding: 5px
+		border-radius: 30px
+		&::before
+			position: absolute
+			top: -2px
+			bottom: -2px
+			left: -2px
+			right: -2px
+			background: linear-gradient(90deg, #93c8ff, #1e4fc2)
+			content: ''
+			z-index: -1
+			border-radius: 30px
+			transition: all .5s
+		&::after
+			content: 'Get it now'
+			display: inline-block
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			z-index: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			font: 16px $main_font
+			background: linear-gradient(90deg, #93c8ff, #1e4fc2)
+			background-position: 0 3px
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			transition: all .5s
+		&:hover
+			&::before
+				background-position: 156px 0
+				transition: all .5s
+			&::after
+				background-position: 150px 0
+				transition: all .5s
+
 .logo-wrap
 	max-width: 105px
 	width: 100%
@@ -91,6 +138,7 @@ ul
 	&:hover
 		background-color: darken(rgb(255, 61, 76), 15%)
 		transition: $trs
+		color: #fff
 	&:focus
 		box-shadow: none
 
@@ -161,7 +209,7 @@ ul
 		padding: 10px 0
 	.form-text
 		padding: .8rem 0
-		font: italic 1em $cursive_font
+		font: 1em $cursive_font
 		color: $title_color
 		text-align: center
 		
@@ -172,7 +220,7 @@ ul
 		&::placeholder
 			text-transform: uppercase
 			font: 12px $think_font
-			color: #dadadb
+			color: #858585
 			letter-spacing: 2px
 		
 	.error+.error
@@ -234,7 +282,7 @@ ul
 		position: relative
 		z-index: 1
 		transition: all .2s
-		&.recommend, &:hover
+		&.recommend
 			cursor: pointer
 			.tarrifs-price
 				font-size: 3.625em
@@ -347,6 +395,7 @@ ul
 			
 			img
 				display: none
+				max-height: 25px
 				
 .step3
 	label:not(.error)
@@ -356,20 +405,21 @@ ul
 		text-transform: uppercase
 	input
 		padding: 0.8rem 0.5rem 0.8rem 2rem	
-	a
+	a:not(.btn)
 		color: #006ad7
 		&:hover
 			color: lighten(#006ad7, 5%)
+	.card-number, .card-cvv
+		background: #fff url('../img/icons/input-lock.png') no-repeat calc(100% - 20px) 50%
 
 .my-tooltip 
 	position: absolute
 	top: -3px
 	right: -30px
-	width: 19px
-	height: 19px
+	width: 18px
+	height: 18px
 	border-radius: 50%
-	background: url('../img/icons/input-icons-set.png') no-repeat
-	background-position: -20px 0
+	background: url('../img/icons/input-tooltip.png') no-repeat 0 0
 
 .form-divider
 	border-top: 1px solid rgba(0,0,0,.125)
@@ -386,17 +436,43 @@ ul
 	&:hover
 		background-color: lighten(#01356b, 5%)
 
-.step3-guarantee, .step3-confirm
-	margin-top: 15px
-	font-size: 14px
-	text-align: center
-.step3-guarantee 
-	color: #333
-.step3-confirm
-	color: #969696
 
+.payment-footer
+	font-family: "Roboto", sans-serif
+.step3-guarantee, .step3-confirm, .tarrif-info
+	margin-top: 10px
+.step3-guarantee, .step3-confirm, .tarrif-info, .step3-contact
+	font-size: 12px
+.step3-guarantee, .tarrif-info
+	color: #333
+.step3-confirm, .step3-contact
+	color: #969696
+.step3-contact
+	margin-top: 20px
+	&-info, &-data
+		margin-bottom: 0
+.payment-form1, .payment-form2, .payment-form3
+	padding-bottom: 10px
+.payment-form-info
+	padding: 24px 0 40px
+	min-height: 170px
+	height: auto
+	color: #333
+	font: 14px "Roboto", sans-serif
+	text-align: center
+	.row
+		width: 100% //IE fix
+	&-text
+		margin: 20px 0 0 0
+	img
+		display: block
+		margin: 10px
+		max-height: 30px
+		
+		
+	
 .collapse-form
-	padding: 10px 0
+	padding: 10px 0 20px
 
 
 
@@ -595,8 +671,9 @@ ul
 	&-copy, &-support
 		font-size: .75em
 	&-support
-		color: #4a7ed9
 		a
+			color: #0025ff
+			font-weight: bold
 			&:hover
 				color: #8abcf1
 

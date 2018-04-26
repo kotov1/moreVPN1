@@ -1,6 +1,12 @@
 
 $(function() {
 
+	var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+	if(isSafari) {
+		$('.main-page').addClass('safari');
+	}
+
 
 	// arrows in step3 accordion
 	$('.card-header').click(function() {

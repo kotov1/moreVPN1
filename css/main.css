@@ -562,7 +562,7 @@ input, button {
 }
 .step3 input {
   height: 42px;
-  padding: 0 0 0 30px;
+  padding: 14px 0 12px 30px;
 }
 .step3 a:not(.btn) {
   color: #006ad7;

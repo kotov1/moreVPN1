@@ -3,7 +3,7 @@ $(function() {
 
 	var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
-	if(isSafari) {
+	if(!isSafari) {
 		$('.main-page').addClass('safari');
 	}
 

@@ -139,7 +139,7 @@ input, button {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: 5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -303,6 +303,7 @@ input, button {
   text-align: center;
 }
 .steps input {
+  vertical-align: middle;
   padding: 1.1rem 0.5rem 1.1rem 2rem;
   font: 14px "GothamLight", "GothamMedium", sans-serif;
   letter-spacing: 1px;
@@ -528,6 +529,10 @@ input, button {
           transform: translateY(50%);
 }
 
+.step2 input {
+  height: 52px;
+}
+
 .step3 label:not(.error) {
   position: relative;
   font: 12px "GothamMedium", sans-serif;
@@ -535,6 +540,7 @@ input, button {
   text-transform: uppercase;
 }
 .step3 input {
+  height: 42px;
   padding: 0.8rem 0.5rem 0.8rem 2rem;
 }
 .step3 a:not(.btn) {

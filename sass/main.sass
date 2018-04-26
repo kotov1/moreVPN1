@@ -95,7 +95,7 @@ input, button
 			position: absolute
 			left: 0
 			top: 0
-			z-index: 0
+			z-index: 5
 			display: flex
 			justify-content: center
 			align-items: center
@@ -222,6 +222,7 @@ input, button
 		text-align: center
 		
 	input
+		vertical-align: middle
 		padding: 1.1rem .5rem 1.1rem 2rem
 		font: 14px $think_font
 		letter-spacing: 1px
@@ -394,7 +395,9 @@ input, button
 		padding: 11px 45px
 		transform: translateY(50%)
 
-
+.step2
+	input
+		height: 52px
 				
 .step3
 	label:not(.error)
@@ -403,6 +406,7 @@ input, button
 		color: #383c43	
 		text-transform: uppercase
 	input
+		height: 42px
 		padding: 0.8rem 0.5rem 0.8rem 2rem	
 	a:not(.btn)
 		color: #006ad7

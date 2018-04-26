@@ -63,6 +63,10 @@ ul {
   text-align: center;
 }
 
+input, button {
+  -webkit-appearance: none;
+}
+
 /*GENERAL STYLES END */
 .page-wrapper {
   color: #fff;
@@ -73,6 +77,7 @@ ul {
   background-repeat: no-repeat;
   background-position: 66% 142px;
   background-size: auto 1530px;
+  z-index: 0;
 }
 
 .header {
@@ -145,6 +150,7 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     font: 16px "GothamMedium", sans-serif;
+    color: #1e4fc2;
     background: -webkit-gradient(linear, left top, right top, from(#93c8ff), to(#1e4fc2));
     background: linear-gradient(90deg, #93c8ff, #1e4fc2);
     background-position: 0 3px;
@@ -520,12 +526,6 @@ ul {
   padding: 11px 45px;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
-}
-
-.step2-sign {
-  font-family: "GothamLight", "GothamMedium", sans-serif;
-  color: #383c43;
-  text-align: center;
 }
 
 .step3 label:not(.error) {

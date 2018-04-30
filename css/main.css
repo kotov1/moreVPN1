@@ -330,25 +330,25 @@ input, button {
 }
 .steps input::-webkit-input-placeholder {
   text-transform: uppercase;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #858585;
   letter-spacing: 2px;
 }
 .steps input:-ms-input-placeholder {
   text-transform: uppercase;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #858585;
   letter-spacing: 2px;
 }
 .steps input::-ms-input-placeholder {
   text-transform: uppercase;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #858585;
   letter-spacing: 2px;
 }
 .steps input::placeholder {
   text-transform: uppercase;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #858585;
   letter-spacing: 2px;
 }
